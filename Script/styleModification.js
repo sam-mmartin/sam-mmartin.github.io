@@ -220,24 +220,30 @@ function startARCO() {
     javaArco();
     pythontArco();
 }
-function scrollHeader() {
-    var scrollPosition;
-    var containerHEADER = document.querySelector('.header-paralax');
-    var containerICON = document.querySelector('.icon-paralax');
+function headerFIXED() {
+    var scrollPosicao;
+    var icones = document.querySelector('.icones');
+    var header = document.querySelector('.spaceTitle');
 
-    scrollPosition = window.scrollY;
-    if(scrollPosition <= 577) {
-        containerICON.style.position = "";
-        containerHEADER.style.opacity = 1 - (scrollPosition / 577);
-        containerICON.style.boxShadow = "0 0 0";
-        console.log(scrollPosition);
-        console.log(containerICON.style.transform);
+    scrollPosicao = window.scrollY;
+    if(scrollPosicao <= 100) {
+        header.style.opacity = 1 - (scrollPosicao / 100);
+        icones.style.position = "";
+        icones.style.width = "";
+        icones.style.margin = "1em 6em 1em 1em";
+        icones.style.justifyContent = "flex-start";
+        icones.style.backgroundColor = "rgba(255, 255, 255, 0)";
+        icones.style.boxShadow = "0 0 0";
     }else {
-        containerICON.style.position = "fixed";
-        containerICON.style.top = "0";
-        containerICON.style.width = "100%";
-        containerICON.style.background = "rgba(255, 255, 255, 0.85)";
-        containerICON.style.boxShadow = "0 2px 6px #636363";        
+        icones.style.position = "fixed";
+        icones.style.top = "0";
+        icones.style.width = "100%";
+        icones.style.margin = "0";
+        icones.style.justifyContent = "center";
+        icones.style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+        icones.style.boxShadow = "0 2px 6px #DA3333";
+        icones.style.transitionProperty = "background, boxShadow";
+        icones.style.transitionDuration = "1s";
     }
 }
-window.addEventListener('scroll', scrollHeader);
+window.addEventListener('scroll', headerFIXED);
