@@ -18,42 +18,60 @@ header {
     width: 100%;
     z-index: 10;
 }
-#cabecalho {
+#headerMAIN {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
 }
-.containerH1 {
-    margin: 1em;
-    margin-left: 5em;
+.headerMain {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
 }
-.containerICON {
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.containerIcon {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.rowContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.icones {
     margin: 1em;
-    margin-right: 5em;
+    margin-right: 6em;
 }
 #logo {
-    margin: 1em;
+    margin: 4em 0 4em 0;
 }
-#tituloHOME {
+.iconTitle {
+    margin: 0 2em 0 2em;
+    width: 3em;
+    height: 3em;
+}
+.titleHOME {
     font-family: 'Orbitron', sans-serif;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 4em;
     letter-spacing: 0.05em;
     color: #5caccd;
-    margin: 0;
-    margin-right: 0.5em;
-    padding: 0;
+    margin: auto;
+    margin-bottom: 1em;
 }
-.linkTITULO {
-    align-self: center;
-}
-.iconTitulo {
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 0;
-    width: 6em;
-    height: 6em;
+.spaceTitle {
+    margin: 1em;
+    margin-left: 6em;
 }
 
 /*----------------------------------------------------
