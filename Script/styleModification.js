@@ -226,8 +226,8 @@ function headerFIXED() {
     var header = document.querySelector('.spaceTitle');
 
     scrollPosicao = window.scrollY;
-    if(scrollPosicao <= 60) {
-        header.style.opacity = 1 - (scrollPosicao / 60);
+    if(scrollPosicao <= 50) {
+        header.style.opacity = 1 - (scrollPosicao / 50);
         icones.style.position = "";
         icones.style.width = "";
         icones.style.margin = "1em 6em 1em 1em";
