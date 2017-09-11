@@ -168,6 +168,11 @@ a:hover {
 /*-----------------------------------------------------
 2.1. Section Style Extended
 -------------------------------------------------------*/
+.services {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 #services {
     margin: 0;
     padding: 0;
