@@ -319,9 +319,15 @@ footer .container-col-footer h4 {
 Media Query
 ------------------------------------------------------*/
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    /*define tamanho da fonte no documento*/
     html {
         font-size: 2vw;
     }
+    /*------------------------------------------------------*/
+    #logo {
+        width: 50%;
+    }
+    /*Define estilo do container*/
     .container-row-footer {
         justify-content: flex-start;
     }
