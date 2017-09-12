@@ -253,6 +253,7 @@ footer {
     flex-flow: column wrap;
     align-items: flex-start;
     margin: 3em;
+    margin-bottom: 0;
     padding: 0; 
 }
 .containerROWfooter {
@@ -261,11 +262,12 @@ footer {
     justify-content: center;
     margin: 0;
     margin-top: 3em;
-    margin-bottom: 5em;
+    margin-bottom: 6em;
     padding: 0;
 }
-.footerH2 {
+footer h2 {
     font-family: 'Saira', sans-serif;
+    font-size: 1.5em;   
     color: #FFFFFF;
     margin: 1em;
     margin-left: 0;
@@ -320,7 +322,5 @@ Media Query
     html {
         font-size: 2vw;
     }
-    .containerROWfooter {
-        flex-flow: column wrap;
-    }
+   
 }
