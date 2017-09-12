@@ -262,10 +262,11 @@ footer {
     margin: 0;
     margin-bottom: 5em;
     padding: 0;
+    width: 85%;
 }
 footer .container-col-footer h2 {
     font-family: 'Saira', sans-serif;
-    font-size: 2em;  
+    font-size: 1.7em;  
     color: #FFFFFF;
     margin: 1em;
     margin-left: 0;
@@ -319,5 +320,8 @@ Media Query
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     html {
         font-size: 2vw;
+    }
+    .container-row-footer {
+        justify-content: flex-start;
     }
 }
