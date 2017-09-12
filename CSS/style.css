@@ -320,4 +320,7 @@ Media Query
     html {
         font-size: 2vw;
     }
+    .containerROWfooter {
+        flex-flow: column wrap;
+    }
 }
