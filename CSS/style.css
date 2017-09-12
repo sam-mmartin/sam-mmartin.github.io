@@ -324,8 +324,8 @@ Media Query
         font-size: 2vw;
     }
     /*------------------------------------------------------*/
-    .logo {
-        width: 30em;
+    #logo {
+        width: 40em;
     }
     /*Define estilo do container*/
     .container-row-footer {
