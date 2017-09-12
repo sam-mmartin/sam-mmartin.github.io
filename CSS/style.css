@@ -266,7 +266,8 @@ footer {
     padding: 0;
 }
 .footerH2 {
-    font-family: 'Saira', sans-serif;  
+    font-family: 'Saira', sans-serif;
+    font-size: 2em;  
     color: #FFFFFF;
     margin: 1em;
     margin-left: 0;
