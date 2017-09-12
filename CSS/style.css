@@ -324,9 +324,6 @@ Media Query
         font-size: 2vw;
     }
     /*------------------------------------------------------*/
-    #logo {
-        width: 30em;
-    }
     /*Define estilo do container*/
     .container-row-footer {
         justify-content: flex-start;
