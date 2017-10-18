@@ -64,9 +64,7 @@ html, body, header, section, footer, div{
     font-weight: bolder;
     letter-spacing: 0.05em;
     font-size: 6vw;
-    color: #4dbcfb;
-    margin-left: auto;
-    margin-right: auto; 
+    color: #4dbcfb; 
 }
     @media (max-width: 750px) {
         #logo {
@@ -78,7 +76,7 @@ html, body, header, section, footer, div{
     }
     @media (max-width: 1080px) {
         #logo {
-            width: 80vw;
+            width: 70vw;
         }
         .title-H1 {
             font-size: 10vw;
