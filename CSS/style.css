@@ -64,7 +64,7 @@ html, body, header, section, footer, div, article{
 /* Iphone 3 e complementares */
     @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) and (orientation: portrait) {
         .capa {
-            height: 85vmax;
+            height: 90vmax;
         }
         .container-Logo {
             margin: auto;
