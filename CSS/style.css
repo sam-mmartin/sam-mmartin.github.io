@@ -30,7 +30,7 @@ html, body, header, section, footer, div, article{
 1. HEADER
 ----------------------------------------------------------------*/
 .capa {
-    height: 90vmax;
+    height: 90vh;
     background-color: #FFF;
 }
 .centro {
@@ -156,7 +156,7 @@ html, body, header, section, footer, div, article{
     }
     @media (min-resolution: 288dpi) and (orientation: landscape) {
         .container-Logo {
-            height: 85vh;
+            height: 85vmax;
         }
         #logo {
             width: 30vw;
