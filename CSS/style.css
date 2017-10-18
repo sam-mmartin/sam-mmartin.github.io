@@ -112,6 +112,24 @@ html, body, header, section, footer, div{
             width: 8vw;
         }
     }
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 424dpi) {
+        .container-Logo {
+            height: 85vmin;
+        }
+        #logo {
+            width: 60vw;
+        }
+        .title-H1 {
+            font-size: 8vw;
+            letter-spacing: 0.01em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 2em;
+            margin-right: 2em;
+            width: 8vw;
+        }
+    }
 /*--------------------------------------------------------------
 2. SECTION
 ----------------------------------------------------------------*/
