@@ -114,7 +114,7 @@ html, body, header, section, footer, div{
     }
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 424dpi) {
         .container-Logo {
-            height: 90%;
+            height: 85vmin;
         }
         #logo {
             width: 60vw;
