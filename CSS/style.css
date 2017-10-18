@@ -1,337 +1,92 @@
-body {
+/*------------------------------------------------------------
+0. STRUCTURE
+--------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+    
+}
+html, body, header, section, footer, div{
     margin: 0;
     padding: 0;
-    background-color: #2D2929;
-    display: flex;
-    flex-flow: column wrap;
+    font-family: 'Roboto';
 }
-/*---------------------------------------------------
-1. Header Style
------------------------------------------------------*/
-header {
-    top: 0;
-    margin: 0;
+.container-Main {
+    width: 100%;
     padding: 0;
-    background-color: #FFFFFF;
-    background-size: cover;
-    width: 100%;
-    z-index: 10;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
-.headerMain {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    width: 100%;
-}
-.container {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-.containerIcon {
-    margin: auto;
+    @media (min-width: 1366px) {
+        .container-Main {
+            max-width: 1920px;
+        }
+    }
+/* LINHA */
+.row {
     display: flex;
     flex-flow: row wrap;
+}
+.col {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 1vh;
+    width: 100%;
+}
+    @media (min-width: 750px) {
+        .section-1 {
+            width: 60%;
+        }
+        .section-2 {
+            width: 40%;
+        }
+    }
+/*--------------------------------------------------------------
+1. HEADER
+----------------------------------------------------------------*/
+.capa {
+    height: 90vh;
+    background-color: #FFF;
+}
+.centro {
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 #logo {
-    margin: 4em 0 4em 0;
+    margin: 0;
+    padding: 0;
+    width: 40vw;
 }
-.iconTitle {
-    margin: auto;
-    margin-top: 2px;
-    margin-left: 2em;
-    margin-right: 2em;
-    width: 3em;
-    height: 3em;
-}
-.titleHOME {
+.title-H1 {
     font-family: 'Orbitron', sans-serif;
     font-weight: bolder;
-    font-size: 4em;
     letter-spacing: 0.05em;
-    color: #5caccd;
-    margin: auto;
-    margin-bottom: 1em;
+    font-size: 6vw;
+    color: #4dbcfb;
+    margin-left: auto;
+    margin-right: auto; 
 }
-/*---------------------------------------------------
-1.1. Header Style Extended
-----------------------------------------------------*/
-#headerMAIN {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 100%;
-}
-.rowContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-.icones {
-    margin: 1em;
-    margin-right: 6em;
-}
-.titleSUP {
-    margin: 0;
-}
-.spaceTitle {
-    margin: 1em;
-    margin-left: 6em;
-}
-/*----------------------------------------------------
-2. Section Style
-------------------------------------------------------*/
-#aboutME {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #5caccd;
-}
-.container-col {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-.container-row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    margin-bottom: 5em;
-    padding: 0;
-    width: 85%;
-}
-.heading {
-    margin-top: 5em;
-}
-.heading h2 {
-    font-family: 'Saira', sans-serif;
-    font-weight: bolder;
-    font-size: 3.0em;
-    color: #FFFFFF;
-}
-.description {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-}
-.description h4 {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
-    font-size: 2.0em;
-    color: #ffffff;
-    margin: 0;
-}
-.description p {
-    margin: 0;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 1.1em;
-    color: #ffffff;
-}
-.description h5 {
-    margin: 0;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
-    font-size: 1.6em;
-    color: #ffffff;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    color: yellow;
-}
-.fa-soundcloud {
-    margin-right: 0.3em;
-    color: #141414;
-}
-img {
-    max-width: 100%;
-}
-.photo {
-    margin: auto;
-    margin-left: 3em;
-    margin-right: 3em;
-    padding: 0;
-    overflow: hidden;
-}
-.photoME {
-    margin: 0;
-    padding: 0;
-    width: 17em;
-    height: 17em;
-}
-/*-----------------------------------------------------
-2.1. Section Style Extended
--------------------------------------------------------*/
-.services {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#services {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-.loading {
-    margin: 0;
-    padding: 0;
-    width: 33%;
-    height: 18em;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-.retangulo {
-    margin: 0;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin: 0 auto;
-    width: 60%;
-}
-.retangulo h4 {
-    margin: 0;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
-    font-size: 2.0em;
-    color: #ffffff;
-}
-.retangulo p {
-    margin: 0;
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 1em;
-    color: #DA3333;
-    text-align: center;
-}
-.containerARCO {
-    display: inline-flex;
-    flex-flow: row wrap;
-    align-items: center;
-    width: 150px;
-    margin: 0;
-}
-.load {
-    position: relative;
-    left: 0;
-    margin-left: -30%;
-}
-.porcentagem {
-    position: relative;
-    margin: auto;
-    left: 35%;
-    font-family: 'Abel', sans-serif;
-    font-size: 1.2em;
-    z-index: 2;
-    color: #FFFFFF;
-}
-.porcentagem:after {
-    content: '%';
-    margin-left: 0.1em;
-}
-/*-------------------------------------------------------
-3. Footer Style
----------------------------------------------------------*/
-
-footer {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #000000;
-}
-.container-col-footer {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    margin: 3em;
-    margin-bottom: 0;
-    padding: 0;
-}
-.container-row-footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 0;
-    margin-bottom: 5em;
-    padding: 0;
-    width: 85%;
-}
-footer .container-col-footer h2 {
-    font-family: 'Saira', sans-serif;
-    font-size: 1.7em;  
-    color: #FFFFFF;
-    margin: 1em;
-    margin-left: 0;
-}
-footer .container-col-footer h4 {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
-    font-size: 1.1em;
-    color: #ffffff;
-    margin: 0.5em;
-    margin-left: 0;
-}
-.local:before {
-    content: "\f041";
-    font-family: FontAwesome;
-    margin-right: 0.3em;
-}
-.phone:before {
-    content: "\f095";
-    font-family: FontAwesome;
-    margin-right: 0.3em;
-}
-.email:before {
-    content: "\f0e0";
-    font-family: FontAwesome;
-    margin-right: 0.3em;
-}
-.face:before {
-    content: "\f230";
-    font-family: FontAwesome;
-    margin-right: 0.3em;
-}
-.insta:before {
-    content: "\f16d";
-    font-family: FontAwesome;
-    margin-right: 0.3em;
-}
-.sound:before {
-    content: "\f1be";
-    font-family: FontAwesome;
-    margin-right: 0.3em;
-}
-.youtube:before {
-    content: "\f16a";
-    font-family: FontAwesome;
-    margin-right: 0.3em;
-}
-/*----------------------------------------------------
-Media Query
-------------------------------------------------------*/
-@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-    /*define tamanho da fonte no documento*/
-    html {
-        font-size: 2vw;
+    @media (max-width: 750px) {
+        #logo {
+            width: 60vw;
+        }
+        .title-H1 {
+            font-size: 8vw;
+        }
     }
-    /*------------------------------------------------------*/
-    /*Define estilo do container*/
-    .container-row-footer {
-        justify-content: flex-start;
-    }
-    footer .container-col-footer h2 {
-        font-size: 2.0em;
-    }
-    footer .container-col-footer h4 {
-        font-size: 1.6em;
-    }
+/*--------------------------------------------------------------
+2. SECTION
+----------------------------------------------------------------*/
+.corpo {
+    background: #f5d5fe;
+    color: #FFF;
+}
+/*--------------------------------------------------------------
+3. FOOTER
+----------------------------------------------------------------*/
+.rodape {
+    background-color: #000;
+    color: #FFF;
 }
