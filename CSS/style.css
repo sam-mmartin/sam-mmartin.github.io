@@ -95,6 +95,24 @@ html, body, header, section, footer, div{
             width: 6vw;
         }
     }
+    @media (min-resolution: 96dpi) and (orientation: landscape) {
+        .container-Logo {
+            height: 85vh;
+        }
+        #logo {
+            width: 30vw;
+        }
+        .title-H1 {
+            font-size: 5vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 5vmin;
+            margin-right: 5vmin;
+            width: 5vw;
+        }
+    }
 /* Iphone 4 e complementares */
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (orientation: portrait) {
         .container-Logo {
@@ -114,6 +132,24 @@ html, body, header, section, footer, div{
             width: 6vw;
         }
     }
+    @media (min-resolution: 192dpi) and (orientation: landscape) {
+        .container-Logo {
+            height: 85vh;
+        }
+        #logo {
+            width: 30vw;
+        }
+        .title-H1 {
+            font-size: 5vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 5vmin;
+            margin-right: 5vmin;
+            width: 5vw;
+        }
+    }
 /* Iphone 6+ e complementares */
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) and (orientation: portrait) {
         .container-Logo {
@@ -131,6 +167,24 @@ html, body, header, section, footer, div{
             margin-left: 6vmin;
             margin-right: 6vmin;
             width: 6vw;
+        }
+    }
+    @media (min-resolution: 288dpi) and (orientation: landscape) {
+        .container-Logo {
+            height: 85vh;
+        }
+        #logo {
+            width: 30vw;
+        }
+        .title-H1 {
+            font-size: 5vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 5vmin;
+            margin-right: 5vmin;
+            width: 5vw;
         }
     }
 /*--------------------------------------------------------------
