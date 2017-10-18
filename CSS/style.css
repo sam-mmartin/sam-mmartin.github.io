@@ -17,12 +17,6 @@ html, body, header, section, footer, div{
     margin-left: auto;
     margin-right: auto;
 }
-    @media (min-width: 1366px) {
-        .container-Main {
-            max-width: 1920px;
-        }
-    }
-/* LINHA */
 .row {
     display: flex;
     flex-flow: row wrap;
@@ -33,14 +27,6 @@ html, body, header, section, footer, div{
     min-height: 1vh;
     width: 100%;
 }
-    @media (min-width: 750px) {
-        .section-1 {
-            width: 60%;
-        }
-        .section-2 {
-            width: 40%;
-        }
-    }
 /*--------------------------------------------------------------
 1. HEADER
 ----------------------------------------------------------------*/
@@ -187,12 +173,88 @@ html, body, header, section, footer, div{
             width: 5vw;
         }
     }
+/* Notebook e Desktop */
+    @media (min-width: 1280px){
+        .container-Logo {
+            height: 85vh;
+        }
+        #logo {
+            width: 40vw;
+        }
+        .title-H1 {
+            font-size: 5vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 7vmin;
+            margin-right: 7vmin;
+            width: 3vw;
+            height: 6vh;
+        }
+    }
+    @media (min-width: 1366px){
+        .container-Logo {
+            height: 85vh;
+        }
+        #logo {
+            width: 30vw;
+        }
+        .title-H1 {
+            font-size: 4vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 6vmin;
+            margin-right: 6vmin;
+            width: 3vw;
+            height: 6vh;
+        }
+    }
+    @media (min-width: 1440px){
+        .container-Logo {
+            height: 85vh;
+        }
+        #logo {
+            width: 30vw;
+        }
+        .title-H1 {
+            font-size: 5vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 7vmin;
+            margin-right: 7vmin;
+            width: 3vw;
+            height: 6vh;
+        }
+    }
 /*--------------------------------------------------------------
 2. SECTION
 ----------------------------------------------------------------*/
 .corpo {
     background: #f5d5fe;
     color: #FFF;
+}
+/* Iphone 6+ e complementares */
+@media (min-resolution: 288dpi) and (orientation: landscape) {
+    .section-1 {
+        width: 60%;
+    }
+    .section-2 {
+        width: 40%;
+    }
+}
+/* Notebook e Desktop */
+@media (min-width: 1366px) {
+    .section-1 {
+        width: 60%;
+    }
+    .section-2 {
+        width: 40%;
+    }
 }
 /*--------------------------------------------------------------
 3. FOOTER
