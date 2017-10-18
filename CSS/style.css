@@ -244,7 +244,6 @@ html, body, header, section, footer, div, article{
     align-items: center;
     font-family: 'Saira', sans-serif;
     font-weight: bolder;
-    font-size: 2em;
     color: #FFFFFF;
     background-color: #4dbcfb; 
 }
@@ -272,10 +271,8 @@ html, body, header, section, footer, div, article{
 } 
 /* Iphone 6+ e complementares */
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) and (orientation: portrait) {
-        .row-Heading {
-            height: 10vh;
-        }
         .row-Heading h2 {
+            font-size: 8vmin;
             margin: auto;
             margin-top: 10vmin;
         }
@@ -287,21 +284,18 @@ html, body, header, section, footer, div, article{
         .description h4 {
             font-family: 'Rajdhani', sans-serif;
             font-weight: 500;
-            font-size: 2em;
+            font-size: 3.5vmin;
         }
         .description p {
             font-family: 'Rajdhani', sans-serif;
-            font-size: 1.1em;
+            font-size: 2.5vmin;
         }
         .image-Circle {
-            width: 51vw;
+            width: 80vw;
             border-radius: 0;
         }    
     }
     @media (min-resolution: 288dpi) and (orientation: landscape) {
-        .row-Heading {
-            height: 18vh;
-        }
         .image-Circle {
             width: 20vw;
             border-radius: 50%;
