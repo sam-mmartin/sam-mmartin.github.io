@@ -138,7 +138,7 @@ html, body, header, section, footer, div, article{
 /* Iphone 6+ e complementares */
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) and (orientation: portrait) {
         .capa {
-            height: 80vmax;
+            height: 82vmax;
         }
         #logo {
             width: 50vw;
