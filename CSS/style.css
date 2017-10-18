@@ -63,8 +63,11 @@ html, body, header, section, footer, div, article{
 }
 /* Iphone 3 e complementares */
     @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) and (orientation: portrait) {
+        .capa {
+            height: 80vmax;
+        }
         .container-Logo {
-            height: 85vh;
+            margin: auto;
         }
         #logo {
             width: 50vw;
@@ -81,8 +84,11 @@ html, body, header, section, footer, div, article{
         }
     }
     @media (min-resolution: 96dpi) and (orientation: landscape) {
+        .capa {
+            height: 80vmin;
+        }
         .container-Logo {
-            height: 85vh;
+            margin: auto;
         }
         #logo {
             width: 30vw;
@@ -100,9 +106,7 @@ html, body, header, section, footer, div, article{
     }
 /* Iphone 4 e complementares */
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (orientation: portrait) {
-        .container-Logo {
-            height: 85vh;
-        }
+        
         #logo {
             width: 50vw;
         }
@@ -118,9 +122,7 @@ html, body, header, section, footer, div, article{
         }
     }
     @media (min-resolution: 192dpi) and (orientation: landscape) {
-        .container-Logo {
-            height: 85vh;
-        }
+        
         #logo {
             width: 30vw;
         }
@@ -138,7 +140,10 @@ html, body, header, section, footer, div, article{
 /* Iphone 6+ e complementares */
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) and (orientation: portrait) {
         .capa {
-            height: 82vmax;
+            height: 80vmax;
+        }
+        .container-Logo {
+            margin: auto;
         }
         #logo {
             width: 50vw;
