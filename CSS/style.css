@@ -155,8 +155,8 @@ html, body, header, section, footer, div, article{
         }
     }
     @media (min-resolution: 288dpi) and (orientation: landscape) {
-        .container-Logo {
-            height: 85vmin;
+        .capa {
+            height: 90vmin;
         }
         #logo {
             width: 30vw;
