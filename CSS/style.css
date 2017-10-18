@@ -5,7 +5,7 @@
     box-sizing: border-box;
     
 }
-html, body, header, section, footer, div{
+html, body, header, section, footer, div, article{
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
@@ -19,12 +19,11 @@ html, body, header, section, footer, div{
 }
 .row {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 .col {
     display: flex;
     flex-flow: column nowrap;
-    min-height: 1vh;
     width: 100%;
 }
 /*--------------------------------------------------------------
@@ -235,27 +234,97 @@ html, body, header, section, footer, div{
 2. SECTION
 ----------------------------------------------------------------*/
 .corpo {
-    background: #f5d5fe;
+    background: #635069;
     color: #FFF;
 }
+.row-Heading {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Saira', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    color: #FFFFFF;
+    background-color: #4dbcfb; 
+}
+.row-Content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #4dbcfb; 
+}
+.row-Content h4, h5, p {
+    margin: 0;
+    padding: 0; 
+}
+.description {
+    text-align: justify;
+}
+.image-Circle {
+    margin: 0;
+    border-radius: 50%; 
+}
+.container-Image {
+    align-items: center;
+} 
 /* Iphone 6+ e complementares */
-@media (min-resolution: 288dpi) and (orientation: landscape) {
-    .section-1 {
-        width: 60%;
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) and (orientation: portrait) {
+        .row-Heading {
+            height: 10vh;
+        }
+        .row-Heading h2 {
+            margin: auto;
+            margin-top: 10vmin;
+        }
+        .description {
+            margin: 2vmin;
+            margin-left: 8vmin;
+            margin-right: 8vmin;
+        }
+        .description h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 2em;
+        }
+        .description p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1em;
+        }
+        .image-Circle {
+            width: 51vw;
+            border-radius: 0;
+        }    
     }
-    .section-2 {
-        width: 40%;
+    @media (min-resolution: 288dpi) and (orientation: landscape) {
+        .row-Heading {
+            height: 18vh;
+        }
+        .image-Circle {
+            width: 20vw;
+            border-radius: 50%;
+        }
+        .container-Image {
+            align-items: flex-start;
+        }
+        .section-1 {
+            width: 70%;
+        }
+        .section-2 {
+            width: 30%;
+        }
     }
-}
 /* Notebook e Desktop */
-@media (min-width: 1366px) {
-    .section-1 {
-        width: 60%;
+    @media (min-width: 1366px) {
+        .section-1 {
+            width: 70%;
+        }
+        .section-2 {
+            width: 30%;
+        }
     }
-    .section-2 {
-        width: 40%;
-    }
-}
 /*--------------------------------------------------------------
 3. FOOTER
 ----------------------------------------------------------------*/
