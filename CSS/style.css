@@ -96,10 +96,10 @@ html, body, header, section, footer, div{
     }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 326dpi){
         .container-Logo {
-            
+            height: 85vmin;
         }
         #logo {
-            width: 50vw;
+            width: 60vw;
         }
         .title-H1 {
             font-size: 8vw;
@@ -109,7 +109,7 @@ html, body, header, section, footer, div{
             margin: auto;
             margin-left: 2em;
             margin-right: 2em;
-            width: 6vw;
+            width: 8vw;
         }
     }
 /*--------------------------------------------------------------
