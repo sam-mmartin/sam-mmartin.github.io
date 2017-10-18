@@ -74,6 +74,21 @@ html, body, header, section, footer, div{
             font-size: 10vw;
         }
     }
+.container-Icon {
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.iconTitle {
+    margin: auto;
+    margin-top: 2px;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 3em;
+    height: 3em;
+}
 /*--------------------------------------------------------------
 2. SECTION
 ----------------------------------------------------------------*/
