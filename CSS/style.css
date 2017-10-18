@@ -76,15 +76,7 @@ html, body, header, section, footer, div{
     justify-content: center;
     align-items: center;
 }
-    @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-        #logo {
-            width: 90vw;
-        }
-        .title-H1 {
-            font-size: 20vw;
-        }
-    }
-    @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
+    @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 118dpi) {
         .container-Logo {
             height: 85vmin;
         }
@@ -102,22 +94,22 @@ html, body, header, section, footer, div{
             width: 4vw;
         }
     }
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 326dpi){
         .container-Logo {
             
         }
         #logo {
-            width: 60vw;
+            width: 50vw;
         }
         .title-H1 {
-            font-size: 10vw;
+            font-size: 8vw;
             letter-spacing: 0.01em;
         }
         .iconTitle {
             margin: auto;
             margin-left: 2em;
             margin-right: 2em;
-            width: 8vw;
+            width: 6vw;
         }
     }
 /*--------------------------------------------------------------
