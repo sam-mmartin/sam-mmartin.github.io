@@ -59,18 +59,14 @@ html, body, header, section, footer, div{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    
 }
 #logo {
     margin: 0;
     padding: 0;
-    width: 40vw;
 }
 .title-H1 {
     font-family: 'Orbitron', sans-serif;
     font-weight: bolder;
-    letter-spacing: 0.05em;
-    font-size: 6vw;
     color: #4dbcfb; 
 }
 .container-Icon {
@@ -80,18 +76,48 @@ html, body, header, section, footer, div{
     justify-content: center;
     align-items: center;
 }
-.iconTitle {
-    margin: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 6vw;
-}
     @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
         #logo {
             width: 90vw;
         }
         .title-H1 {
             font-size: 20vw;
+        }
+    }
+    @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
+        .container-Logo {
+            height: 85vmin;
+        }
+        #logo {
+            width: 30vw;
+        }
+        .title-H1 {
+            font-size: 5vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 2em;
+            margin-right: 2em;
+            width: 4vw;
+        }
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .container-Logo {
+            
+        }
+        #logo {
+            width: 60vw;
+        }
+        .title-H1 {
+            font-size: 10vw;
+            letter-spacing: 0.01em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 2em;
+            margin-right: 2em;
+            width: 8vw;
         }
     }
 /*--------------------------------------------------------------
