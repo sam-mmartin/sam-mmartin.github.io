@@ -61,86 +61,10 @@ html, body, header, section, footer, div, article{
     justify-content: center;
     align-items: center;
 }
-/* Iphone 3 e complementares */
-    @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) and (orientation: portrait) {
-        .capa {
-            height: 90vmax;
-        }
-        .container-Logo {
-            margin: auto;
-        }
-        #logo {
-            width: 50vw;
-        }
-        .title-H1 {
-            font-size: 7vw;
-            letter-spacing: 0.07em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 6vmin;
-            margin-right: 6vmin;
-            width: 6vw;
-        }
-    }
-    @media (min-resolution: 96dpi) and (orientation: landscape) {
-        .capa {
-            height: 80vmin;
-        }
-        .container-Logo {
-            margin: auto;
-        }
-        #logo {
-            width: 30vw;
-        }
-        .title-H1 {
-            font-size: 5vw;
-            letter-spacing: 0.05em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 5vmin;
-            margin-right: 5vmin;
-            width: 5vw;
-        }
-    }
-/* Iphone 4 e complementares */
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (orientation: portrait) {
-        
-        #logo {
-            width: 50vw;
-        }
-        .title-H1 {
-            font-size: 7vw;
-            letter-spacing: 0.07em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 6vmin;
-            margin-right: 6vmin;
-            width: 6vw;
-        }
-    }
-    @media (min-resolution: 192dpi) and (orientation: landscape) {
-        
-        #logo {
-            width: 30vw;
-        }
-        .title-H1 {
-            font-size: 5vw;
-            letter-spacing: 0.05em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 5vmin;
-            margin-right: 5vmin;
-            width: 5vw;
-        }
-    }
 /* Iphone 6+ e complementares */
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) and (orientation: portrait) {
         .capa {
-            height: 89vmax;
+            height: 100vmax;
         }
         .container-Logo {
             margin: auto;
@@ -156,17 +80,19 @@ html, body, header, section, footer, div, article{
             margin: auto;
             margin-left: 6vmin;
             margin-right: 6vmin;
-            width: 6vw;
+            width: 8vw;
         }
     }
     @media (min-resolution: 288dpi) and (orientation: landscape) {
         .capa {
-            height: 80vmin;
+            height: 100vmin;
         }
         #logo {
             width: 30vw;
         }
         .title-H1 {
+            margin: auto;
+            padding: 1vmin;
             font-size: 5vw;
             letter-spacing: 0.05em;
         }
@@ -291,6 +217,11 @@ html, body, header, section, footer, div, article{
             font-weight: 500;
             font-size: 3.5vmin;
         }
+        .description h5 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 3vmin;
+        }
         .description p {
             font-family: 'Rajdhani', sans-serif;
             font-size: 2.5vmin;
@@ -298,7 +229,18 @@ html, body, header, section, footer, div, article{
         .image-Circle {
             width: 80vw;
             border-radius: 0;
-        }    
+        }   
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: yellow;
+        }
+        .fa-soundcloud {
+            margin-right: 2vmin;
+            color: #141414;
+        } 
     }
     @media (min-resolution: 288dpi) and (orientation: landscape) {
         .image-Circle {
