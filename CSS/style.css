@@ -61,8 +61,8 @@ html, body, header, section, footer, div, article, img{
     justify-content: center;
     align-items: center;
 }
-/* Iphone 6+ e complementares */
-    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) and (orientation: portrait) {
+/* Iphone 6+, complementares e resolução 1080p */
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
         .capa {
             height: 100vmax;
         }
@@ -103,16 +103,94 @@ html, body, header, section, footer, div, article, img{
             width: 5vw;
         }
     }
+/* Iphone 6, complementares e resolução 720p */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .capa {
+            height: 100vmax;
+        }
+        .container-Logo {
+            margin: auto;
+        }
+        #logo {
+            width: 50vw;
+        }
+        .title-H1 {
+            font-size: 7vw;
+            letter-spacing: 0.07em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 6vmin;
+            margin-right: 6vmin;
+            width: 8vw;
+        }
+    }
+    @media (min-resolution: 192dpi) and (orientation: landscape) {
+        .capa {
+            height: 100vmin;
+        }
+        #logo {
+            width: 30vw;
+        }
+        .title-H1 {
+            margin: auto;
+            padding: 1vmin;
+            font-size: 5vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 5vmin;
+            margin-right: 5vmin;
+            width: 5vw;
+        }
+    }
+/* Iphone 3, complementares e resolução menor que 720p */
+    @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
+        .capa {
+            height: 100vmax;
+        }
+        .container-Logo {
+            margin: auto;
+        }
+        #logo {
+            width: 50vw;
+        }
+        .title-H1 {
+            font-size: 7vw;
+            letter-spacing: 0.07em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 6vmin;
+            margin-right: 6vmin;
+            width: 8vw;
+        }
+    }
+    @media (min-resolution: 96dpi) and (orientation: landscape) {
+        .capa {
+            height: 100vmin;
+        }
+        #logo {
+            width: 30vw;
+        }
+        .title-H1 {
+            margin: auto;
+            padding: 1vmin;
+            font-size: 5vw;
+            letter-spacing: 0.05em;
+        }
+        .iconTitle {
+            margin: auto;
+            margin-left: 5vmin;
+            margin-right: 5vmin;
+            width: 5vw;
+        }
+    }
 /* Notebook e Desktop */
-    @media (min-width: 1280px){
-       
-    }
-    @media (min-width: 1366px){
-        
-    }
-    @media (min-width: 1440px){
-        
-    }
+    @media (min-width: 1280px){}
+    @media (min-width: 1366px){}
+    @media (min-width: 1440px){}
 /*--------------------------------------------------------------
 2. SECTION
 ----------------------------------------------------------------*/
@@ -158,7 +236,7 @@ a:hover {
 .fa-soundcloud {
     color: #141414;
 } 
-/* Iphone 6+, complementares e resolução FULL HD (1080x1920) */
+/* Iphone 6+, complementares e resolução 1080p */
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
         .row-Heading h2 {
             font-size: 5em;
@@ -198,7 +276,103 @@ a:hover {
             display: none;
         }   
     }
-    @media (orientation: landscape) {
+    @media (min-resolution: 288dpi) and (orientation: landscape) {
+        .image-Circle {
+            width: 50vw;
+        }
+        .foto2 {
+            display: inline;
+        }
+    }
+/* Iphone 6, complementares e resolução 720p */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .row-Heading h2 {
+            font-size: 5em;
+            margin: auto;
+            margin-top: 10vmin;
+        }
+        .description {
+            margin: 2vmin;
+            margin-left: 8vmin;
+            margin-right: 8vmin;
+        }
+        .description h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 3em;
+        }
+        .description h5 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 3em;
+        }
+        .description p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5em;
+        }
+        .row-Portrait {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-Circle {
+            width: 80vw;
+            border-radius: 0;
+        }
+        .foto2 {
+            display: none;
+        }   
+    }
+    @media (min-resolution: 192dpi) and (orientation: landscape) {
+        .image-Circle {
+            width: 50vw;
+        }
+        .foto2 {
+            display: inline;
+        }
+    }
+/* Iphone 3, complementares e resolução menor que 720p */
+    @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
+        .row-Heading h2 {
+            font-size: 5em;
+            margin: auto;
+            margin-top: 10vmin;
+        }
+        .description {
+            margin: 2vmin;
+            margin-left: 8vmin;
+            margin-right: 8vmin;
+        }
+        .description h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 3em;
+        }
+        .description h5 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 3em;
+        }
+        .description p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5em;
+        }
+        .row-Portrait {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-Circle {
+            width: 80vw;
+            border-radius: 0;
+        }
+        .foto2 {
+            display: none;
+        }   
+    }
+    @media (min-resolution: 96dpi) and (orientation: landscape) {
         .image-Circle {
             width: 50vw;
         }
@@ -257,7 +431,7 @@ a:hover {
     font-family: FontAwesome;
     margin-right: 0.3em;
 }
-/* Iphone 6+, complementares e resolução FULL HD (1080x1920) */
+/* Iphone 6+, complementares e resolução 1080p */
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
         .rodape {
             display: flex;
@@ -287,7 +461,101 @@ a:hover {
             margin-left: 0;
         }
     }
-    @media (orientation: landscape) {
+    @media (min-resolution: 288dpi) and (orientation: landscape) {
+        .rodape {
+            padding-top: 15vmin;
+            padding-bottom: 15vmin;
+            padding-left: 8vmin;
+        }
+        .centralizado {
+            width: 40%;
+            margin: 0;
+        }
+        .centralizado h2 {
+            font-size: 2.5em;
+        }
+        .centralizado h4 {
+            font-size: 1.5em;
+        }
+    }
+/* Iphone 6, complementares e resolução 720p */
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 192dpi) {
+        .rodape {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding-top: 10vmin;
+            padding-bottom: 10vmin;
+        }
+        .centralizado {
+            display: flex;
+            flex-flow: col nowrap;
+            margin: auto;
+            margin-bottom: 2vmin;
+            width: 51%;             
+        }
+        .centralizado h2 {
+            font-family: 'Saira', sans-serif;
+            font-size: 4em;
+            margin: auto;
+        }
+        .centralizado h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 2.5em;
+            color: #ffffff;
+            margin: 0.5em;
+            margin-left: 0;
+        }
+    }
+    @media (min-resolution: 192dpi) and (orientation: landscape) {
+        .rodape {
+            padding-top: 15vmin;
+            padding-bottom: 15vmin;
+            padding-left: 8vmin;
+        }
+        .centralizado {
+            width: 40%;
+            margin: 0;
+        }
+        .centralizado h2 {
+            font-size: 2.5em;
+        }
+        .centralizado h4 {
+            font-size: 1.5em;
+        }
+    }
+/* Iphone 3, complementares e resolução menor que 720p */
+    @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
+        .rodape {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding-top: 10vmin;
+            padding-bottom: 10vmin;
+        }
+        .centralizado {
+            display: flex;
+            flex-flow: col nowrap;
+            margin: auto;
+            margin-bottom: 2vmin;
+            width: 51%;             
+        }
+        .centralizado h2 {
+            font-family: 'Saira', sans-serif;
+            font-size: 4em;
+            margin: auto;
+        }
+        .centralizado h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 2.5em;
+            color: #ffffff;
+            margin: 0.5em;
+            margin-left: 0;
+        }
+    }
+    @media (min-resolution: 96dpi) and (orientation: landscape) {
         .rodape {
             padding-top: 15vmin;
             padding-bottom: 15vmin;
