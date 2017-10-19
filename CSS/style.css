@@ -105,61 +105,13 @@ html, body, header, section, footer, div, article{
     }
 /* Notebook e Desktop */
     @media (min-width: 1280px){
-        .container-Logo {
-            height: 85vh;
-        }
-        #logo {
-            width: 40vw;
-        }
-        .title-H1 {
-            font-size: 5vw;
-            letter-spacing: 0.05em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 7vmin;
-            margin-right: 7vmin;
-            width: 3vw;
-            height: 6vh;
-        }
+       
     }
     @media (min-width: 1366px){
-        .container-Logo {
-            height: 85vh;
-        }
-        #logo {
-            width: 30vw;
-        }
-        .title-H1 {
-            font-size: 4vw;
-            letter-spacing: 0.05em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 6vmin;
-            margin-right: 6vmin;
-            width: 3vw;
-            height: 6vh;
-        }
+        
     }
     @media (min-width: 1440px){
-        .container-Logo {
-            height: 85vh;
-        }
-        #logo {
-            width: 30vw;
-        }
-        .title-H1 {
-            font-size: 5vw;
-            letter-spacing: 0.05em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 7vmin;
-            margin-right: 7vmin;
-            width: 3vw;
-            height: 6vh;
-        }
+        
     }
 /*--------------------------------------------------------------
 2. SECTION
@@ -196,8 +148,8 @@ html, body, header, section, footer, div, article{
 .container-Image {
     align-items: center;
 }
-/* Iphone 6+ e complementares */
-    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) and (orientation: portrait) {
+/* Iphone 6+, complementares e resolução FULL HD (1080x1920) */
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
         .row-Heading h2 {
             font-size: 8vmin;
             margin: auto;
@@ -254,3 +206,78 @@ html, body, header, section, footer, div, article{
     background-color: #000;
     color: #FFF;
 }
+.local:before {
+    content: "\f041";
+    font-family: FontAwesome;
+    margin-right: 0.3em;
+}
+.phone:before {
+    content: "\f095";
+    font-family: FontAwesome;
+    margin-right: 0.3em;
+}
+.email:before {
+    content: "\f0e0";
+    font-family: FontAwesome;
+    margin-right: 0.3em;
+}
+.face:before {
+    content: "\f230";
+    font-family: FontAwesome;
+    margin-right: 0.3em;
+}
+.insta:before {
+    content: "\f16d";
+    font-family: FontAwesome;
+    margin-right: 0.3em;
+}
+.sound:before {
+    content: "\f1be";
+    font-family: FontAwesome;
+    margin-right: 0.3em;
+}
+.youtube:before {
+    content: "\f16a";
+    font-family: FontAwesome;
+    margin-right: 0.3em;
+}
+/* Iphone 6+, complementares e resolução FULL HD (1080x1920) */
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+        .rodape {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding-top: 10vmin;
+            padding-bottom: 10vmin;
+        }
+        .centralizado {
+            display: flex;
+            flex-flow: col nowrap;
+            margin: auto;
+            margin-bottom: 2vmin;
+            width: 51%;             
+        }
+        .centralizado h2 {
+            font-family: 'Saira', sans-serif;
+            font-size: 6vmin;
+            margin: auto;
+        }
+        .centralizado h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 2.5vmin;
+            color: #ffffff;
+            margin: 0.5em;
+            margin-left: 0;
+        }
+    }
+    @media (orientation: landscape) {
+        .rodape {
+            padding-top: 15vmin;
+            padding-bottom: 15vmin;
+        }
+        .centralizado {
+            width: 30%;
+            margin: 0;
+        }
+    }
