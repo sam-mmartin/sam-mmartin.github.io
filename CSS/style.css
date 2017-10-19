@@ -259,13 +259,13 @@ html, body, header, section, footer, div, article{
         }
         .centralizado h2 {
             font-family: 'Saira', sans-serif;
-            font-size: 6vmin;
+            font-size: 8vmin;
             margin: auto;
         }
         .centralizado h4 {
             font-family: 'Rajdhani', sans-serif;
             font-weight: 500;
-            font-size: 2.5vmin;
+            font-size: 4vmin;
             color: #ffffff;
             margin: 0.5em;
             margin-left: 0;
@@ -275,9 +275,10 @@ html, body, header, section, footer, div, article{
         .rodape {
             padding-top: 15vmin;
             padding-bottom: 15vmin;
+            padding-left: 8vmin;
         }
         .centralizado {
-            width: 30%;
+            width: 40%;
             margin: 0;
         }
     }
