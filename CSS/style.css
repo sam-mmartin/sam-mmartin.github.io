@@ -165,7 +165,7 @@ html, body, header, section, footer, div, article{
 2. SECTION
 ----------------------------------------------------------------*/
 .corpo {
-    background: #635069;
+    background-color: #4dbcfb; 
     color: #FFF;
 }
 .row-Heading {
@@ -175,16 +175,12 @@ html, body, header, section, footer, div, article{
     align-items: center;
     font-family: 'Saira', sans-serif;
     font-weight: bolder;
-    color: #FFFFFF;
-    background-color: #4dbcfb; 
 }
 .row-Content {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
-    background-color: #4dbcfb; 
 }
 .row-Content h4, h5, p {
     margin: 0;
@@ -238,50 +234,9 @@ html, body, header, section, footer, div, article{
             color: yellow;
         }
         .fa-soundcloud {
-            margin-right: 2vmin;
+            margin-right: 2em;
             color: #141414;
         } 
-    }
-    @media (min-resolution: 288dpi) and (orientation: landscape) {
-        .row-Heading h2 {
-            font-size: 8vmin;
-            margin: auto;
-            margin-top: 10vmin;
-        }
-        .description {
-            margin: 2vmin;
-            margin-left: 8vmin;
-            margin-right: 8vmin;
-        }
-        .description h4 {
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 500;
-            font-size: 3.5vmin;
-        }
-        .description h5 {
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 500;
-            font-size: 3vmin;
-        }
-        .description p {
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 2.5vmin;
-        }
-        .image-Circle {
-            width: 80vw;
-            border-radius: 0;
-        }   
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        a:hover {
-            color: yellow;
-        }
-        .fa-soundcloud {
-            margin-right: 2vmin;
-            color: #141414;
-        }
     }
 /* Notebook e Desktop */
     @media (min-width: 1366px) {
