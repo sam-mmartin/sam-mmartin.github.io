@@ -243,18 +243,44 @@ html, body, header, section, footer, div, article{
         } 
     }
     @media (min-resolution: 288dpi) and (orientation: landscape) {
+        .row-Heading h2 {
+            font-size: 8vmin;
+            margin: auto;
+            margin-top: 10vmin;
+        }
+        .description {
+            margin: 2vmin;
+            margin-left: 8vmin;
+            margin-right: 8vmin;
+        }
+        .description h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 3.5vmin;
+        }
+        .description h5 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 3vmin;
+        }
+        .description p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2.5vmin;
+        }
         .image-Circle {
-            width: 20vw;
-            border-radius: 50%;
+            width: 80vw;
+            border-radius: 0;
+        }   
+        a {
+            text-decoration: none;
+            color: black;
         }
-        .container-Image {
-            align-items: flex-start;
+        a:hover {
+            color: yellow;
         }
-        .section-1 {
-            width: 70%;
-        }
-        .section-2 {
-            width: 30%;
+        .fa-soundcloud {
+            margin-right: 2vmin;
+            color: #141414;
         }
     }
 /* Notebook e Desktop */
