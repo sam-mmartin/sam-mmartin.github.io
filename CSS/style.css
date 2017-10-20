@@ -188,7 +188,10 @@ html, body, header, section, footer, div, article, img{
     justify-content: flex-start;
     align-items: center;
     height: 80%;
-    font-size: 2vmin;
+}
+.estation h1 {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
 }
 .playlist {
     justify-content: center;
