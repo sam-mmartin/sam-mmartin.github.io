@@ -144,7 +144,7 @@ html, body, header, section, footer, div, article, img{
 1.1 Header Producer
 ----------------------------------------------------------------*/
 .capa-Soundcloud {
-    height: 90vmin;
+    height: 100vmin;
     width: 100vmin;
     background-image: url('Background/abstract-sound.jpg');
     background-repeat: no-repeat;
@@ -157,10 +157,10 @@ html, body, header, section, footer, div, article, img{
     align-items: flex-end;
 }
 .header-1 {
-    height: 44%;
+    height: 43%;
 }
 .header-2 {
-    height: 56%;
+    height: 57%;
 }
 .coluna-1 {
     display: flex;
@@ -177,17 +177,18 @@ html, body, header, section, footer, div, article, img{
     align-items: center;
 }
 .arrow-Back {
-    width: 6vmin;
+    width: 7vmin;
     margin-left: 5vmin;
 }
 .image-Circle-Sound {
-    width: 25vw;
+    width: 30vw;
     border-radius: 50%;
 }
 .estation {
     justify-content: flex-start;
     align-items: center;
     height: 80%;
+    font-size: 2vmin;
 }
 .playlist {
     justify-content: center;
@@ -195,7 +196,7 @@ html, body, header, section, footer, div, article, img{
     height: 20%;
 }
 #followers {
-    font-size: 1.5em;
+    font-size: 2em;
     color: gray;
     margin: 0;
 }
@@ -208,7 +209,7 @@ html, body, header, section, footer, div, article, img{
     font-size: 2em;
     margin: auto;
     margin-top: 5vmin;
-    width: 35vmin;
+    width: 40vmin;
     height: 8vmin;
     border-radius: 2%;
     color: #000;
