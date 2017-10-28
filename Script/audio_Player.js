@@ -13,11 +13,11 @@ var span_Contador = document.querySelectorAll('.cont_Exe');
 var contador = [span_Contador.length];
 
 function play_evento(){
-    console.log(tempo.length);
-    console.log(span_Contador.length);
     for(var j = 0; j < tempo.length; j++) {
         tempo[j].innerHTML = secToStr(playlist[j].duration);
-        barra_progresso[j].max = parseFloat(playlist[j].duration);
+        console.log(typeof(playlist[j].duration));
+        console.log(typeof(barra_progresso[j].max));
+        barra_progresso[j].max = playlist[j].duration;
         contador[j] = 0;
     }
 }
