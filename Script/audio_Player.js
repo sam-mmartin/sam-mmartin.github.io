@@ -17,7 +17,7 @@ function play_evento(){
     console.log(span_Contador.length);
     for(var j = 0; j < tempo.length; j++) {
         tempo[j].innerHTML = secToStr(playlist[j].duration);
-        barra_progresso[j].max = playlist[j].duration;
+        barra_progresso[j].max = parseFloat(playlist[j].duration);
         contador[j] = 0;
     }
 }
