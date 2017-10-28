@@ -5,11 +5,11 @@ var faixaAnterior = 0;
 var clicado;
 var idMusic;
 var tocarID;
-playlist = document.querySelectorAll('.LineUP');
-idMusic = document.getElementsByClassName('btn-player');
-tempo = document.querySelectorAll('.tempo');
-barra_progresso = document.querySelectorAll('.barra_progresso');
-span_Contador = document.querySelectorAll('.cont_Exe');
+var playlist = document.querySelectorAll('.LineUP');
+var idMusic = document.getElementsByClassName('btn-player');
+var tempo = document.querySelectorAll('.tempo');
+var barra_progresso = document.querySelectorAll('.barra_progresso');
+var span_Contador = document.querySelectorAll('.cont_Exe');
 var contador = [span_Contador.length];
 
 function play_evento(){
@@ -68,7 +68,6 @@ function atualizar(){
 }
 
 function contador_execucao() {
-    console.log(barra);
     if(execucao == 1 && audio.currentTime == 0) {
         contador[barra] += 1;
         span_Contador[barra].innerHTML = contador[barra];
