@@ -41,19 +41,14 @@
                 <div class="col musicas" id="player-Sound">
                     <div class="row-Player">
                         <audio id="audio1" class="LineUP" src="Music\01 Suas Mentiras.mp3"></audio>
-                        <a href="#" id="1" class="btn-player" onclick="clique(this); play();">
+                        <a href="#" id="1" class="btn-player" onclick="clique(this); play(); contador_execucao()">
                             <img class="art-Album" src="Imagens\suas_mentiras.jpeg">
                             <div class="row-btn">
                                 <h5>Sam M Martin</h5>
                                 <span class="tempo">00:00</span>
                             </div>
                             <h4>Suas Mentiras - Sam M. Martin</h4>
-                            <span class="cont_Exe">
-                                    <?php
-                                   $count = getPostViews();
-                                   echo $count;
-                                   ?>
-                            </span>
+                            <span class="cont_Exe">0</span>
                             <progress class="barra_progresso" max="0" value="0"></progress>
                         </a>
                     </div>
