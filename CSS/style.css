@@ -237,6 +237,9 @@ html, body, header, section, footer, div, article, img{
     border: solid #f50;
     border-width: 0 0 5px 0;
 }
+.btn-playlist:focus {
+    outline: none;
+}
 .btn-info {
     color: gray;
     border: solid #FFF;
@@ -390,11 +393,75 @@ a:hover {
 }
 .musicas {
     margin-top: 3vmin;
+    margin-bottom: 3vmin;
     background-color: #fff;
 }
-iframe {
-    margin-top: 5vmin;
+.row-Player {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 5vmin;
 }
+.btn-player { 
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20vmin;
+    text-align: left;
+    font-size: 2em;
+    color: #000;
+    background: #fff;
+    border-width: 0;
+}
+.btn-player:hover {
+    color: #000;
+}
+.row-btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 1vmin;
+}
+.btn-player h4, h5, .tempo, .cont_Exe {
+    margin: 0;
+    padding: 0;
+}
+.btn-player h5 {
+    color: #808080;
+    font-weight: 500;
+    letter-spacing: 0.2vmin;
+}
+.btn-player h4 {
+    font-weight: 600;
+    width: 80%;
+}
+.btn-player span {
+    color: #808080;
+}
+.art-Album {
+    width: 20%;
+    height: 20vmin;
+    margin-right: 2vmin;
+}
+.barra_progresso {
+    height: 1vmin;
+    width: 80%;
+}
+progress {
+    display: block;
+    -webkit-appearance: none;
+}
+progress::-webkit-progress-value {
+    background-color: #f50;
+}
+progress[value]::-webkit-progress-bar {
+    background: #fff;
+  }
 /*--------------------------------------------------------------
 3. FOOTER
 ----------------------------------------------------------------*/
