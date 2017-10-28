@@ -15,8 +15,6 @@ var contador = [span_Contador.length];
 function play_evento(){
     for(var j = 0; j < tempo.length; j++) {
         tempo[j].innerHTML = secToStr(playlist[j].duration);
-        console.log(typeof(playlist[j].duration));
-        console.log(typeof(barra_progresso[j].max));
         barra_progresso[j].max = playlist[j].duration;
         contador[j] = 0;
     }
