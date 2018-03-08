@@ -27,6 +27,19 @@ html, body, header, section, footer, div, article, img{
     width: 100%;
 }
 /*--------------------------------------------------------------
+0.1 Classes Comuns
+----------------------------------------------------------------*/
+.link_blue {
+    text-decoration: none;
+    color: black;
+}
+.link_blue:hover {
+    color: #4dbcfb;
+}
+.article {
+    color: #000;
+}
+/*--------------------------------------------------------------
 1. HEADER
 ----------------------------------------------------------------*/
 .capa {
@@ -248,8 +261,8 @@ html, body, header, section, footer, div, article, img{
 2. SECTION
 ----------------------------------------------------------------*/
 .corpo {
-    background-color: #4dbcfb; 
-    color: #FFF;
+    background-color: #DAE1E5; 
+    color: #333B3F;
 }
 .row-Heading {
     display: flex;
@@ -279,13 +292,6 @@ html, body, header, section, footer, div, article, img{
 .container-Image {
     align-items: center;
 }
-a {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    color: yellow;
-}
 .fa-soundcloud {
     color: #141414;
 } 
@@ -313,7 +319,7 @@ a:hover {
         }
         .description p {
             font-family: 'Rajdhani', sans-serif;
-            font-size: 1.5em;
+            font-size: 1.8em;
         }
         .row-Portrait {
             display: flex;
@@ -336,10 +342,6 @@ a:hover {
         .foto2 {
             display: inline;
         }
-    }
-/* Ipad Pro, Pro 9.7, 3, 4, Air, Air2, mini 2, 3, 4*/
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
     }
 /* Notebook e Desktop */
     @media (min-width: 1280px) {
@@ -470,7 +472,7 @@ progress[value]::-webkit-progress-bar {
 3. FOOTER
 ----------------------------------------------------------------*/
 .rodape {
-    background-color: #000;
+    background-color: rgb(28, 31, 32);
     color: #FFF;
 }
 .local:before {
@@ -576,18 +578,14 @@ progress[value]::-webkit-progress-bar {
         .centralizado {
             width: 35%;
         }
-        .row-Contato {
-            margin: 0;
-        }
-        .row-SocialMedia {
+        .row-Contato, .row-SocialMedia {
             margin: auto;
             margin-top: 0;
-            margin-right: 0;
         }
         .centralizado h2 {
             font-size: 2.5em;
         }
         .centralizado h4 {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
     }
