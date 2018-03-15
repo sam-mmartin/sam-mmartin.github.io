@@ -88,3 +88,31 @@
     padding: 0;
     margin: 0;
 }
+/*---------- PARALLAX ---------------*/
+.parallax-container {
+    height: 380px;
+}
+.header-filter {
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 995;
+    position: relative;
+}
+.caixa-suspensa {
+    margin-top: -60px;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 
+                0 6px 30px 5px rgba(0, 0, 0, 0.12), 
+                0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 996;
+    background-color: #FFFFFF;
+
+}
+.caixa-suspensa h1 {
+    margin: 0;
+}
+.navbar-parallax {
+    box-shadow: none;
+    transition: all 0.3s ease-in;
+}

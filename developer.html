@@ -1,46 +1,154 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sam M. Martin - Portfólio</title>
+        <title>Sam M. Martin - Developer</title>
         <meta charset="utf-8">
         <link rel="icon" type="imagem/png" href="Imagens\IconTitle.png">
-        <link rel="stylesheet" href="CSS\style.css">
-        <link rel="stylesheet" href="CSS\font-awesome-4.7.0\css\font-awesome.css">
-        <link href="https://fonts.googleapis.com/css?family=Orbitron|Poiret+One|Rajdhani|Roboto:300|Saira" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="CSS/style-material.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div class="container-Main">
-        <!-- Capa -->    
-            <header class="row capa">
-                <h1>Página em construção</h1>     
-            </header>
-        <!-- About Me -->    
-            <section class="row corpo">
-            </section>
-        <!-- Rodapé -->    
-            <footer class="row rodape">
-                <div class="col centralizado">
-                    <div class="row-Contato">
-                        <h2>Contato</h2>
-                        <a href="https://goo.gl/Qn5txW">
-                            <h4 class="local">São Luís - MA</h4>
-                        </a>
-                        <h4 class="phone">(98) 98187-3082</h4>
-                        <h4 class="phone">(98) 98412-6367</h4>
-                        <h4 class="email">sam.c3tech@gmail.com</h4>
-                        <h4 class="email">smeirelesmartins@gmail.com</h4>
+        <div class="parallax-container" data-parallax="true">
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Perfil</a></li>
+                <li><a href="#!">Curtidas</a></li>
+                <li><a href="#!">Seguidores</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Estatísticas</a></li>
+            </ul>
+            <ul id="dropdown-side" class="dropdown-content">
+                <li><a href="#!">Perfil</a></li>
+                <li><a href="#!">Curtidas</a></li>
+                <li><a href="#!">Seguidores</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Estatísticas</a></li>
+            </ul>
+            <!-- Navbar -->
+            <div class="navbar-fixed">
+                <nav class="transparent navbar-parallax">
+                    <div class="nav-wrapper row">
+                        <div class="container">
+                            <a class="left" href="#">
+                                <img class="responsive-img" title="Developer" src="Imagens/developer-icon.png">
+                            </a>
+                            <ul class="left">
+                                <li><a class="nav-link  waves-effect" href="index.html">Inicio</a></li>
+                            </ul>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li>
+                                    <a class="dropdown-button nav-link  waves-effect" href="#!" data-activates="dropdown1">
+                                        Sam M. Martin<i class="material-icons right">arrow_drop_down</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://goo.gl/Ekn8hh" target="_blank" data-original-title="Curte nossa página no Facebook">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li>    
+                                    <a href="https://goo.gl/ADmyNo" target="_blank" data-original-title="Siga nosso Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/Samucaline530" target="_blank" data-original-title="Inscreva-se">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col centralizado">
-                    <div class="row-SocialMedia">
-                        <h2>Social Media</h2>
-                        <a href="https://goo.gl/Ekn8hh"><h4 class="face">Facebook</h4></a>
-                        <a href="https://goo.gl/ADmyNo"><h4 class="insta">Instagram</h4></a>
-                        <a href="https://goo.gl/gM5CLM"><h4 class="sound">Soundcloud</h4></a>
-                        <a href="https://www.youtube.com/user/Samucaline530"><h4 class="youtube">Youtube</h4></a>    
+                </nav>
+            </div>
+            <!-- Sidenav mobile -->
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img class="user-view-background" src="Imagens/user-view-background.jpg">
+                        </div>
+                        <a href="#!user"><img class="circle" src="Imagens/perfil.jpg"></a>
+                        <a href="#!name"><span class="white-text name">Sam M. Martin</span></a>
+                        <a href="#!email"><span class="white-text email">sam.c3tech@gmail.com</span></a>
                     </div>
-                </div>
-            </footer>
+                </li>
+                <li>    
+                    <a class="dropdown-button nav-link" href="#!" data-activates="dropdown-side">
+                        Sam M. Martin<i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li><a class="subheader">Redes Sociais</a></li>
+                <li>
+                    <a href="https://goo.gl/Ekn8hh" target="_blank" data-original-title="Curte nossa página no Facebook">
+                        Facebook<i class="fab fa-facebook-square right"></i>
+                    </a>
+                </li>
+                <li>    
+                    <a href="https://goo.gl/ADmyNo" target="_blank" data-original-title="Siga nosso Instagram">
+                        Instagram<i class="fab fa-instagram right"></i>
+                    </a>
+                </li>
+                <li>    
+                    <a href="https://www.youtube.com/user/Samucaline530" target="_blank" data-original-title="Inscreva-se">
+                        Youtube<i class="fab fa-youtube right"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Background Parallax -->
+            <div class="parallax">
+                <img src="Imagens/city.jpg">
+                <div class="header-filter"></div>
+            </div>
         </div>
+        
+        <!-- Songs Desktop & Tablet -->
+        <div class="section container caixa-suspensa hide-on-small-only">
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            <h1>PARALLAX</h1>
+            
+        </div>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.js"></script>
+        <script type="text/javascript" src="Script/nav-parallax.js"></script>
     </body>
 </html>

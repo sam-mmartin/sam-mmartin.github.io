@@ -95,7 +95,7 @@ html, body, header, section, footer, div, article, img{
             margin: auto;
             margin-left: 6vmin;
             margin-right: 6vmin;
-            width: 8vw;
+            width: 9vw;
         }
     }
     @media (min-resolution: 96dpi) and (orientation: landscape) {
@@ -115,7 +115,7 @@ html, body, header, section, footer, div, article, img{
             margin: auto;
             margin-left: 5vmin;
             margin-right: 5vmin;
-            width: 5vw;
+            width: 6vw;
         }
     }
 /* Notebook e Desktop */
@@ -153,110 +153,6 @@ html, body, header, section, footer, div, article, img{
             width: 3.5vw;
         }      
     }
-/*--------------------------------------------------------------
-1.1 Header Producer
-----------------------------------------------------------------*/
-.capa-Soundcloud {
-    height: 100vmin;
-    width: 100vmin;
-    background-image: url('Background/abstract-sound.jpg');
-    background-repeat: no-repeat;
-    background-position: center -29vmin;
-    background-size: contain;
-}
-.row-Soundcloud {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
-}
-.header-1 {
-    height: 43%;
-}
-.header-2 {
-    height: 57%;
-}
-.coluna-1 {
-    display: flex;
-    flex-flow: column nowrap;
-    height: 68%;
-    width: 0%;
-    justify-content: center;
-    align-self: flex-start;
-}
-.coluna-2 {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    align-items: center;
-}
-.arrow-Back {
-    width: 7vmin;
-    margin-left: 5vmin;
-}
-.image-Circle-Sound {
-    width: 30vw;
-    border-radius: 50%;
-}
-.estation {
-    justify-content: flex-start;
-    align-items: center;
-    height: 80%;
-}
-.estation h1 {
-    font-size: 2.5em;
-    letter-spacing: 0.1em;
-}
-.playlist {
-    justify-content: center;
-    align-content: center;
-    height: 20%;
-}
-#followers {
-    font-size: 2em;
-    color: gray;
-    margin: 0;
-}
-#followers:before {
-    content: "\f0c0";
-    font-family: FontAwesome;
-    margin-right: 0.6em;
-}
-.btn-podcast {
-    font-size: 2.2em;
-    margin: auto;
-    margin-top: 5vmin;
-    width: 40vmin;
-    height: 8vmin;
-    border-radius: 2%;
-    color: #000;
-    background: rgba(0,0,0,0);
-    border: 1px solid #808080;
-}
-.btn-podcast:before {
-    content: "\f2ce";
-    font-family: FontAwesome;
-    font-size: 2.5rem;
-    margin-right: 0.6em;
-}
-.btn-playlist {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: 0;
-    width: 50%;
-    height: 100%;
-    border-radius: 2%;
-    color: #f50;
-    background: rgba(0,0,0,0);
-    border: solid #f50;
-    border-width: 0 0 5px 0;
-}
-.btn-playlist:focus {
-    outline: none;
-}
-.btn-info {
-    color: gray;
-    border: solid #FFF;
-}
 /*--------------------------------------------------------------
 2. SECTION
 ----------------------------------------------------------------*/
@@ -391,83 +287,6 @@ html, body, header, section, footer, div, article, img{
             font-size: 2em;
         }
     }
-/*--------------------------------------------------------------
-2.1 Section Producer
-----------------------------------------------------------------*/
-.fundo {
-    background-color: rgb(223, 223, 223)
-}
-.musicas {
-    margin-top: 3vmin;
-    margin-bottom: 3vmin;
-    background-color: #fff;
-}
-.row-Player {
-    display: flex;
-    flex-flow: row wrap;
-    width: 90vw;
-    margin: auto;
-    margin-bottom: 5vmin;
-}
-.btn-player { 
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 20vmin;
-    text-align: left;
-    font-size: 2em;
-    color: #000;
-    background: #fff;
-    border-width: 0;
-}
-.btn-player:hover {
-    color: #000;
-}
-.row-btn {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 1vmin;
-}
-.btn-player h4, h5, .tempo, .cont_Exe {
-    margin: 0;
-    padding: 0;
-}
-.btn-player h5 {
-    color: #808080;
-    font-weight: 500;
-    letter-spacing: 0.2vmin;
-}
-.btn-player h4 {
-    font-weight: 600;
-    width: 80%;
-}
-.btn-player span {
-    color: #808080;
-}
-.art-Album {
-    width: 20%;
-    height: 20vmin;
-    margin-right: 2vmin;
-}
-.barra_progresso {
-    height: 1vmin;
-    width: 80%;
-}
-progress {
-    display: block;
-    -webkit-appearance: none;
-}
-progress::-webkit-progress-value {
-    background-color: #f50;
-}
-progress[value]::-webkit-progress-bar {
-    background: #fff;
-  }
 /*--------------------------------------------------------------
 3. FOOTER
 ----------------------------------------------------------------*/

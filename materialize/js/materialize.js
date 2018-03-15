@@ -2561,6 +2561,9 @@ if (Vel) {
       });
     });
   };
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
 })(jQuery);
 ;(function ($) {
 
