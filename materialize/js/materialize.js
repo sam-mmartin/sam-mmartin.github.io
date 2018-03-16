@@ -9840,6 +9840,8 @@ if (Vel) {
       $.error('Method ' + methodOrOptions + ' does not exist on jQuery.carousel');
     }
   }; // Plugin end
+
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
 })(jQuery);
 ;(function ($) {
 
