@@ -1,6 +1,10 @@
 .cor-escura {
     background-color:  #E5E5E5;
 }
+
+.container {
+    width: 85%;
+}
 /*-----------------------------------------------------
 1. HEADER 
 -------------------------------------------------------*/
@@ -11,9 +15,6 @@
     .navbar-fixed nav .nav-wrapper a .responsive-img {
         height: 56px;
     }
-}
-.container {
-    width: 85%;
 }
 .navbar-fixed nav .nav-wrapper .l11 .container {
     width: 100%;
@@ -304,11 +305,27 @@ body .profile img {
     opacity: 0;
     padding: 10px 0; 
 }
+#card1,
+#card2,
+#card3,
+#card4 {
+    opacity: 0;
+}
 /*-------------- FOOTER -----------------------*/
 .page-footer {
     margin: 0;
     padding: 0;
     padding-bottom: 16px;
+}
+.about .nav-footer .nav-content {
+    height: 100%;
+    
+    margin: auto;
+}
+.about .nav-footer .nav-content ul {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
 }
 .copyright {
     height: 64px;
@@ -316,6 +333,9 @@ body .profile img {
 @media only screen and (max-width: 600px) {
     .copyright {
         height: 56px;
+    }
+    .about .container {
+        width: auto;
     }
 }
 .copyright .credits {

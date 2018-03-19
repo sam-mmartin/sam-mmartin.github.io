@@ -42,116 +42,71 @@ html, body, header, section, footer, div, article, img{
 /*--------------------------------------------------------------
 1. HEADER
 ----------------------------------------------------------------*/
-.capa {
-    height: 90vh;
-    background-color: #FFF;
-}
-.centro {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.container-Logo {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-#logo {
+header {
+    top: 0;
     margin: 0;
     padding: 0;
+    background-color: #FFFFFF;
+    background-size: cover;
+    width: 100%;
+    z-index: 10;
 }
-.title-H1 {
+#headerMAIN {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.rowContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.spaceTitle {
+    margin: 1em;
+    margin-left: 6em;
+}
+.titleHOME {
     font-family: 'Orbitron', sans-serif;
     font-weight: bolder;
-    color: #4dbcfb; 
+    font-size: 4em;
+    letter-spacing: 0.05em;
+    color: #5caccd;
+    margin: auto;
+    margin-bottom: 1em;
 }
-.container-Icon {
+.titleSUP {
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+}
+.icones {
+    margin: 1em;
+    margin-right: 6em;
+}
+.iconTitle {
+    margin: auto;
+    margin-top: 2px;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 3em;
+    height: 3em;
 }
 /* Iphone 3, 4, 5, 6(+), 7(+), complementares */
     @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
-        .capa {
-            height: 100vmax;
-        }
-        .container-Logo {
-            margin: auto;
-        }
-        #logo {
-            width: 50vw;
-        }
-        .title-H1 {
-            font-size: 7vw;
-            letter-spacing: 0.07em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 6vmin;
-            margin-right: 6vmin;
-            width: 9vw;
-        }
+        
     }
     @media (min-resolution: 96dpi) and (orientation: landscape) {
-        .capa {
-            height: 100vmin;
-        }
-        #logo {
-            width: 30vw;
-        }
-        .title-H1 {
-            margin: auto;
-            padding: 1vmin;
-            font-size: 5vw;
-            letter-spacing: 0.05em;
-        }
-        .iconTitle {
-            margin: auto;
-            margin-left: 5vmin;
-            margin-right: 5vmin;
-            width: 6vw;
-        }
+        
     }
 /* Notebook e Desktop */
     @media (min-width: 1280px){
-        .capa {
-            height: 100vmin;
-        }
-        #logo {
-            width: 33vw;
-        }
-        .title-H1 {
-            font-size: 6vw;
-            letter-spacing: 0.06em;
-        }
-        .iconTitle {
-            margin-left: 5vmin;
-            margin-right: 5vmin;
-            width: 3.5vw;
-            height: 6vh;
-        }
+        
     }
     @media (min-width: 1366px){
-        #logo {
-            width: 30vw;
-        }
-        .iconTitle {
-            width: 3vw;
-        }
+        
     }
     @media (min-width: 1440px){
-        #logo {
-            width: 32vw;
-        }
-        .iconTitle {
-            width: 3.5vw;
-        }      
+            
     }
 /*--------------------------------------------------------------
 2. SECTION
