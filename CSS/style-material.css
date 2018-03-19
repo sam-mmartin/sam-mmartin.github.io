@@ -311,6 +311,9 @@ body .profile img {
 #card4 {
     opacity: 0;
 }
+.padding-i-right {
+    padding-right: 10px;
+}
 /*-------------- FOOTER -----------------------*/
 .page-footer {
     margin: 0;
