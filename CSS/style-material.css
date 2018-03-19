@@ -1,3 +1,6 @@
+.cor-escura {
+    background-color:  #E5E5E5;
+}
 /*-----------------------------------------------------
 1. HEADER 
 -------------------------------------------------------*/
@@ -190,42 +193,60 @@ body .profile img {
         padding: 0 15px;
     }
 }
-/*-------------- SERVICES -----------------*/
-.row-margin {
+.vertical-margin {
     margin-top: 4.284rem;
 }
-.nav-tabs-link{
-    border: 0;
-    box-shadow: unset;
+.padding-zero {
+    padding: 0!important;
 }
-.nav-pills {
-    padding: 0;
+/*-------------- SERVICES -----------------*/
+.services .tabs {
+    height: auto;
+    width: auto;
+    white-space: normal;
+    border: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 0;
     list-style: none;
-    justify-content: center;
 }
-.nav-pills:not(.flex-column) .nav-item+.nav-item:not(:first-child) {
-    margin-left: 5px;
+.services .tabs .tab {
+    height: 104px;
+    width: auto;
+    margin-right: auto;
 }
-.nav-pills .nav-item .tabs-link.link-active {
+.services .tabs .tab .tabs-link.active {
     color: #FFF;
     background-color: #9c27b0;
     box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
 }
-.nav-pills .nav-item .tabs-link {
+.services .tabs .tab .tabs-link {
+    margin: auto;
     border-radius: 4px;
     line-height: 24px;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 500;
-    min-width: 100px;
+    max-width: 100px;
     text-align: center;
     color: #555;
     transition: all .3s;
     padding: 10px 15px;
     border: 0;
+    display: block;
+    text-overflow: unset;
+}
+.services .tabs-link i {
+    display: block;
+    font-size: 30px;
+    padding: 15px 0;
+    line-height: 1;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    letter-spacing: normal
+}
+.tabs .indicator {
+    background-color: transparent;
 }
 /*----------------- CARD -----------------------*/
 .card .card-content {
@@ -239,4 +260,80 @@ body .profile img {
 }
 .card .card-content a {
     font-size: 0.88rem;
+}
+.margin-zero {
+    margin: 0;
+}
+.tamanho-section {
+    min-width: 95%!important;
+}
+/*-------------- CURRICULUM -------------------*/
+#curriculum .tabs {
+    height: auto;
+    width: auto;
+    white-space: normal;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+@media only screen and (min-width: 993px) {
+    #curriculum .tabs {
+        flex-wrap: nowrap;
+    }
+}
+#curriculum .tabs .tab a {
+    margin: auto;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #555;
+    transition: all .3s;
+    border: 0;
+    display: block;
+    text-overflow: unset;
+}
+#curriculum .tabs .tab a.active {
+    color: #FFF;
+    background-color: #e57373;
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
+}
+.list-UL li {
+    opacity: 0;
+    padding: 10px 0; 
+}
+/*-------------- FOOTER -----------------------*/
+.page-footer {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 16px;
+}
+.copyright {
+    height: 64px;
+}
+@media only screen and (max-width: 600px) {
+    .copyright {
+        height: 56px;
+    }
+}
+.copyright .credits {
+    height: 100%;
+}
+.nav-footer {
+    border: 0;
+    box-shadow: unset;
+}
+.copyright .credits p,
+.copyright .credits p i,
+.nav-footer ul li a {
+    color: #3C4858;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.copyright .credits p {
+    padding: 0;
+    margin: auto;
 }

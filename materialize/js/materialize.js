@@ -2627,7 +2627,7 @@ if (Vel) {
         // Change swipeable according to responsive threshold
         if (options.swipeable) {
           if (window_width > options.responsiveThreshold) {
-            options.swipeable = false;
+            options.swipeable = true;
           }
         }
 
