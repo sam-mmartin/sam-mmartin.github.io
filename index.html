@@ -1,97 +1,516 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sam M. Martin - Portfólio</title>
+        <title>Sam M. Martin - Developer</title>
         <meta charset="utf-8">
         <link rel="icon" type="imagem/png" href="Imagens\IconTitle.png">
-        <link rel="stylesheet" href="CSS\style.css">
-        <link rel="stylesheet" href="CSS\font-awesome-4.7.0\css\font-awesome.css">
-        <link href="https://fonts.googleapis.com/css?family=Orbitron|Poiret+One|Rajdhani|Roboto:300|Saira" rel="stylesheet">
-        <script type="text/javascript" src="Script\style_Modify.js"></script>
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="CSS/style-material.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <body>
-        <div class="container-Main">
-        <!-- Capa --> 
-            <header class="row capa">
-                <div class="col centro">
-                    <div class="container-Logo header-Paralax">
-                        <img id="logo" title="Ir para página inicial" src="Imagens\s-logo.png">
-                        <h1 class="title-H1">Sam M. Martin</h1>
-                    </div>
-                    <div class="container-Icon icon-Paralax">
-                        <a href="developer.html">
-                            <img class="iconTitle" title="Developer" src="Imagens\coding.png">
-                        </a>
-                        <a href="musician.html">
-                            <img class="iconTitle" title="Musician" src="Imagens\piano.png">
-                        </a>
-                        <a href="sound.html">
-                            <img class="iconTitle" title="Sound Engineer" src="Imagens\wave2.png">
-                        </a>
-                        <a href="producer-material.html">
-                            <img class="iconTitle" title="Music Producer" src="Imagens\mixer.png">
-                        </a>
-                    </div>
-                </div>
-            </header>
-        <!-- About Me -->    
-            <section class="row corpo">
-                <div class="col">
-                    <div class="row-Heading">
-                        <h2>Sobre</h2>
-                    </div>
-                    <div class="row-Content">
-                        <div class="col section-1">
-                            <article class="description">
-                                <h4><strong>Samuel M. M.</strong><br>Desenvolvedor | Músico | Técnico de Som | Produtor Musical</h4>
-                                <br><br>
-                                <p class="article">Um cara que gosta de computadores e quis descobrir como eles funcionam.
-                                    Um apaixonado por música. Músico por obrigação e convicção.
-                                    Produtor musical nas horas vagas.
-                                    Engenheiro de Som sempre que tem um tempinho na agenda sempre lotada.<br><br>
-                                    Atualmente trabalhando no desenvolvimento de um projeto voltado para
-                                    controle do tráfego nas vias da cidade de São Luís. Projeto nascido através da parceria entre a UNDB e a SMTT.
-                                    Trabalhando também no desenvolvimento de aplicação para controle físico de acesso voltada para a plataforma Android.
-                                    Além é claro dos desenvolvimentos do meu site (portfólio) e, do site <a class="link_blue" href="https://lordsimperium.github.io/"><strong>Lord's IMPERIUM</strong></a>.<br><br>
-                                    Amo viajar, Amo carros, Amo piano, Amo o meu DEUS.<br>
-                                    As músicas que produzo hospedo no <a class="link_blue" href="https://soundcloud.com/"><strong>Soundcloud</strong> <i class="fa fa-soundcloud"></i></a>
-                                </p><br><br>
-                                <h5>(98) 98187-3082 / (98) 98412-6367</h5>
-                            </article>
+    <body class="cor-escura">
+<!-- Header -->
+        <div class="parallax-container" data-parallax="true">
+<!-- Navbar -->
+            <div class="navbar-fixed">
+                <nav class="transparent navbar-parallax">
+                    <div class="nav-wrapper row">
+                        <div class="container">
+                            <a class="left tooltipped" href="#" data-position="bottom" data-delay="50" data-tooltip="Developer">
+                                <img class="responsive-img icon-Header" alt="Developer" src="Imagens/developer-icon.png">
+                            </a>
+                            <ul class="left">
+                                <li><a class="nav-link waves-effect thin link-parallax" href="index.html">Inicio</a></li>
+                            </ul>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a class="nav-link waves-effect thin link-parallax" href="index.html">Sam M. Martin</a></li>
+                                <li>
+                                    <a href="https://goo.gl/Ekn8hh" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Curta nossa página no Facebook">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li>    
+                                    <a href="https://goo.gl/ADmyNo" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Siga nosso Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/Samucaline530" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Inscreva-se">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- Fim Container -->
+                    </div><!-- Fim Nav-Wrapper -->
+                </nav><!-- Fim Navbar-Parallax -->
+            </div><!-- Fim Navbar-Fixed -->
+<!-- Sidenav mobile -->
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img class="user-view-background" src="Imagens/code-view-background.png">
                         </div>
-                        <div class="col section-2 container-Image">
-                            <div class="row row-Portrait">
-                                <img class="image-Circle" src="Imagens\perfil.jpg">
-                                <img class="image-Circle foto2" src="Imagens\perfil_2.jpg">
-                            </div>                            
+                        <a href="#!user"><img class="circle" src="Imagens/perfil.jpg"></a>
+                        <a href="#!name"><span class="white-text name">Sam M. Martin</span></a>
+                        <a href="#!email"><span class="white-text email">sam.c3tech@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="index.html">Sam M. Martin</a></li>
+                <li class="divider"></li>
+                <li><a class="subheader">Redes Sociais</a></li>
+                <li>
+                    <a href="https://goo.gl/Ekn8hh" target="_blank" data-original-title="Curte nossa página no Facebook">
+                        Facebook<i class="fab fa-facebook-square right"></i>
+                    </a>
+                </li>
+                <li>    
+                    <a href="https://goo.gl/ADmyNo" target="_blank" data-original-title="Siga nosso Instagram">
+                        Instagram<i class="fab fa-instagram right"></i>
+                    </a>
+                </li>
+                <li>    
+                    <a href="https://www.youtube.com/user/Samucaline530" target="_blank" data-original-title="Inscreva-se">
+                        Youtube<i class="fab fa-youtube right"></i>
+                    </a>
+                </li>
+            </ul>
+<!-- Background Parallax -->
+            <div class="parallax">
+                <img src="Imagens/city.jpg">
+                <div class="header-filter"></div>
+            </div>
+        </div><!-- Fim Parallax-Container -->
+<!-- Section Principal -->
+        <div class="section container caixa-suspensa">
+            <div class="row">
+                <div class="col m6 center col-center">
+<!-- Profile -->
+                    <div class="profile">
+<!-- Avatar -->                        
+                        <div class="avatar">
+                            <img src="Imagens/avatar-circle.jpg" class="img-raised img-fluid rounded-circle" alt="Circle Image">
+                        </div><!-- Fim Avatar -->
+<!-- Titulo -->                        
+                        <div class="titulo">
+                            <h3>Sam M. Martin</h3>
+                            <h6>Developer</h6>
+                            <a href="musician.html" class="icons-pages-link tooltipped" data-position="left" data-delay="50" data-tooltip="Musician">
+                                <i class="material-icons">speaker</i>
+                            </a>
+                            <a href="sound.html" class="icons-pages-link tooltipped" data-position="bottom" data-delay="50" data-tooltip="Sound Engineer">
+                                <i class="material-icons">settings_input_component</i>
+                            </a>
+                            <a href="producer-material.html" class="icons-pages-link tooltipped" data-position="right" data-delay="50" data-tooltip="Music Producer">
+                                <i class="material-icons">headset</i>
+                            </a>
+                        </div><!-- Fim Titulo -->
+                    </div><!-- Fim Profile -->
+                </div><!-- Fim Col -->
+            </div><!-- Fim Row -->
+<!-- Description -->
+            <div class="description center-align">
+                <p>
+                    Completamente viciado e apaixonado por códigos &#x2014; comecei a desenvolver aplicações e sistemas
+                    em 2012 e não consegui mais parar &#x2014; era uma paixão, um hooby, está virando profissão.
+                    Apaixonado por front-end, mas com foco em Inteligência Artificial.
+                </p>
+            </div><!-- Fim Description -->
+<!-- Services -->
+            <div class="container vertical-margin">
+                <div class="row">
+    <!-- Tabs -->                    
+                    <div class="col s12 m8 l6 col-center services">
+                        <ul class="tabs">
+                            <li class="tab col s4">
+                                <a class="tabs-link waves-effect active" href="#linguagens" onclick="Materialize.fadeInImage('#linguagens')">
+                                    <i class="material-icons">developer_mode</i>
+                                    Linguagens
+                                </a>
+                            </li>
+                            <li class="tab col s4">
+                                <a class="tabs-link waves-effect" href="#programas" onclick="Materialize.fadeInImage('#programas')">
+                                    <i class="material-icons">computer</i>
+                                    Programas
+                                </a>
+                            </li>
+                            <li class="tab col s4">
+                                <a class="tabs-link waves-effect" href="#curriculum" onclick="Materialize.fadeInImage('#curriculum')">
+                                    <i class="material-icons">book</i>
+                                    Curriculum
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- Fim col Tabs -->
+        <!-- Linguagens -->                    
+                    <div class="col s12 vertical-margin padding-zero" id="linguagens">
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="Imagens/Developer/C-language.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            Linguagem C<i class="material-icons right">more_vert</i>
+                                            <p><a href="https://en.wikipedia.org/wiki/C_(programming_language)">Saiba Mais</a></p>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Linguagem C<i class="material-icons right">close</i></span>
+                                        <p>
+                                            Uma das linguagens de programação mais populares. 
+                                            C é uma linguagem imperativa e procedural, para implementação de sistemas
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="Imagens/Developer/Java-language.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            Java<i class="material-icons right">more_vert</i>
+                                            <p><a href="https://www.java.com/pt_BR/">Saiba Mais</a></p>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Java<i class="material-icons right">close</i></span>
+                                        <p>Java é uma linguagem de programação interpretada orientada a objetos desenvolvida na década de 90.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="Imagens/Developer/MySQL-language.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            MySQL<i class="material-icons right">more_vert</i>
+                                            <p><a href="https://pt.wikipedia.org/wiki/MySQL">Saiba Mais</a></p>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">MySQL<i class="material-icons right">close</i></span>
+                                        <p>
+                                            Sistema de gerenciamento de banco de dados (SGBD), que utiliza a linguagem SQL
+                                            (Structured Query Language) como interface.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="Imagens/Developer/Python-language.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            Python<i class="material-icons right">more_vert</i>
+                                            <p><a href="https://pt.wikipedia.org/wiki/Python">Saiba Mais</a></p>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Python<i class="material-icons right">close</i></span>
+                                        <p>
+                                            Linguagem de programação de alto nível, interpretada, de script, 
+                                            imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-        <!-- Rodapé -->    
-            <footer class="row rodape">
-                <div class="col centralizado">
-                    <div class="row-Contato">
-                        <h2>Contato</h2>
-                        <a class="link_blue" href="https://goo.gl/Qn5txW">
-                            <h4 class="local">São Luís - MA</h4>
-                        </a>
-                        <h4 class="phone">(98) 98187-3082</h4>
-                        <h4 class="phone">(98) 98412-6367</h4>
-                        <h4 class="email">sam.c3tech@gmail.com</h4>
-                        <h4 class="email">smeirelesmartins@gmail.com</h4>
-                    </div>
-                </div>
-                <div class="col centralizado">
-                    <div class="row-SocialMedia">
-                        <h2>Social Media</h2>
-                        <a class="link_blue" href="https://goo.gl/Ekn8hh"><h4 class="face">Facebook</h4></a>
-                        <a class="link_blue" href="https://goo.gl/ADmyNo"><h4 class="insta">Instagram</h4></a>
-                        <a class="link_blue" href="https://goo.gl/gM5CLM"><h4 class="sound">Soundcloud</h4></a>
-                        <a class="link_blue" href="https://www.youtube.com/user/Samucaline530"><h4 class="youtube">Youtube</h4></a>    
-                    </div>
-                </div>
-            </footer>
-        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="Imagens/Developer/JavaScript-language.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            JavaScript<i class="material-icons right">more_vert</i>
+                                            <p><a href="https://pt.wikipedia.org/wiki/JavaScript">Saiba Mais</a></p>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">JavaScript<i class="material-icons right">close</i></span>
+                                        <p>É atualmente a principal linguagem para programação client-side em navegadores web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="Imagens/Developer/HTML5-language.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            HTML5<i class="material-icons right">more_vert</i>
+                                            <p><a href="https://pt.wikipedia.org/wiki/HTML5">Saiba Mais</a></p>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">HTML5<i class="material-icons right">close</i></span>
+                                        <p>É uma linguagem para estruturação e apresentação de conteúdo para a World Wide Web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="Imagens/Developer/Csharp-language.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                           C#.NET<i class="material-icons right">more_vert</i>
+                                            <p><a href="https://pt.wikipedia.org/wiki/C_Sharp">Saiba Mais</a></p>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">C#.NET<i class="material-icons right">close</i></span>
+                                        <p>Linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="Imagens/Developer/cpp-language.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            C++<i class="material-icons right">more_vert</i>
+                                            <p><a href="https://pt.wikipedia.org/wiki/C%2B%2B">Saiba Mais</a></p>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">C++<i class="material-icons right">close</i></span>
+                                        <p>
+                                            Uma das linguagens comerciais mais populares, sendo bastante usada 
+                                            por seu grande desempenho e base de utilizadores.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim col LINGUAGENS -->
+        <!-- Programas -->                    
+                    <div class="col s12 vertical-margin padding-zero" id="programas">
+                        <h1>PROGRAMAS</h1>
+                        <h1>PROGRAMAS</h1>
+                        <h1>PROGRAMAS</h1>
+                        <h1>PROGRAMAS</h1>
+                        <h1>PROGRAMAS</h1>
+                        <h1>PROGRAMAS</h1>
+                    </div><!-- Fim col PROGRAMAS -->
+        <!-- Curriculum -->                    
+                    <div class="col s12 vertical-margin padding-zero" id="curriculum">
+                        <div class="row">
+                            <div class="col s12">
+                                <ul class="tabs">
+                                    <li class="tab col s12 m6 l4"><a href="#tab1" class="active" onclick="Materialize.showStaggeredList('#list1')">Dados Pessoais</a></li>
+                                    <li class="tab col s12 m6 l4"><a href="#tab2" onclick="Materialize.showStaggeredList('#list2')">Formação Acadêmica</a></li>
+                                    <li class="tab col s12 m6 l4"><a href="#tab3" onclick="Materialize.showStaggeredList('#list3')">Qualificações</a></li>
+                                    <li class="tab col s12 m6 l4"><a href="#tab4" onclick="Materialize.showStaggeredList('#list4')">Experiência Profissional</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab1" class="col s12">
+                                <div class="card red">
+                                    <div class="card-content white-text">
+                                        <ul class="container left-align list-UL" id="list1">
+                                            <li><p>Samuel de Jesus Meireles Martins Filho</p></li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">date_range</i>&nbsp;26 anos
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">people</i>&nbsp;Solteiro
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">email</i>&nbsp;smeirelesmartins@gmail.com
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">phone_iphone</i>&nbsp;(98) 98187-3082
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">location_on</i>&nbsp;
+                                                    Rua Fé em Deus, 02, Planalto Turu, São Luís &#x2014; MA
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab2" class="col s12">
+                                <div class="card blue">
+                                    <div class="card-content white-text">
+                                        <ul class="container left-align list-UL" id="list2">
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">laptop_mac</i>&nbsp;
+                                                    Sistemas de Informação &#x2014; UNDB / MA (em curso)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">settings</i>&nbsp;
+                                                    Engenharia Eletrônica e de Computação &#x2014; UFRJ / RJ (Incompleto)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">whatshot</i>&nbsp;
+                                                    Ensino Médio Técnico &#x2014; IFMA / MA Conclusão em 2010
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">school</i>&nbsp;
+                                                    Ensino Médio &#x2014; Centro de Ensino Marechal Castelo Branco /MA
+                                                    Conclusão em 2008
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab3" class="col s12">
+                                <div class="card green">
+                                    <div class="card-content white-text">
+                                        <ul class="container left-align list-UL" id="list3">
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">memory</i>&nbsp;&nbsp;
+                                                    Machine Learning e Data Science &#x2014; Udemy (em curso)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">phone_iphone</i>&nbsp;&nbsp;
+                                                    Curso de desenvolvimento iOS &#x2014; (em curso)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">android</i>&nbsp;&nbsp;
+                                                    Curso de desenvolvimento Android &#x2014; Udemy (em curso)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">free_breakfast</i>&nbsp;&nbsp;
+                                                    Curso de desenvolvimento Java &#x2014; UNDB
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">mouse</i>&nbsp;&nbsp;
+                                                    Curso de Informática &#x2014; Digital Informática
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    <i class="material-icons">format_color_fill</i>&nbsp;&nbsp;
+                                                    Técnico em Análises Químicas &#x2014; IFMA
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab4" class="col s12">
+                                <div class="card blue-grey darken-3">
+                                    <div class="card-content white-text">
+                                        <ul class="container left-align list-UL" id="list4">
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    Unidade de Ensino Superior Dom Bosco / SMMT &#x2014; MA<br>
+                                                    Desenvolvimento de sistema para controle de tráfego com auxilio de processamento
+                                                    de imagens e inteligência artificial, na cidade de São Luís
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    Unidade de Ensino Superior Dom Bosco &#x2014; MA<br>
+                                                    Desenvolvimento de aplicação de sugestões de cardápios para restaurantes
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    Prefeitura de Gov. Newton Bello &#x2014; MA<br>
+                                                    Cargo: técnico de laboratório
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    Casa & Vídeo &#x2014; RJ<br>
+                                                    Cargo: operador de loja
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="valign-wrapper">
+                                                    Prefeitura de Gov. Newton Bello &#x2014; MA<br>
+                                                    Cargo: professor
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim col CURRICULUM -->
+                </div><!-- Fim row Tabs -->
+            </div><!-- Fim Container Tabs -->
+        </div><!-- Fim Section -->
+<!-- Footer -->
+        <footer class="page-footer transparent">
+            <div class="container tamanho-section">
+                <div class="row margin-zero">
+<!-- About -->
+                    <div class="col s12 l6 about">
+                        <nav class="transparent nav-footer container">
+                            <div class="nav-content">
+                                <ul>
+                                    <li><a href="https://goo.gl/Ekn8hh">SAM M. MARTIN</a></li>
+                                    <li><a href="about.html">ABOUT US</a></li>
+                                    <li><a href="licenses.html">LICENSES</a></li>
+                                </ul>
+                            </div><!-- Fim Nav-Content -->
+                        </nav><!-- Fim Nav -->
+                    </div><!-- Fim About -->
+<!-- Copyright -->
+                    <div class="col s12 l6 copyright">
+                        <div class="credits valign-wrapper">
+                            <p>
+                                &copy;
+                                <script>document.write(new Date().getFullYear())</script>, 
+                                made with <i class="material-icons">favorite</i> by
+                                <a href="https://www.creative-tim.com" target="_blank">SAM M. MARTIN</a> for a better web.
+                            </p>
+                        </div><!-- Fim Container credits -->
+                    </div><!-- Fim Copyright -->
+                </div><!-- Fim Row -->
+            </div><!-- Fim Container -->
+        </footer><!-- Fim Footer -->
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.js"></script>
+        <script type="text/javascript" src="Script/nav-parallax.js"></script>
     </body>
 </html>
