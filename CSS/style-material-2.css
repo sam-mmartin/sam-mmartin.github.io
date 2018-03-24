@@ -9,7 +9,8 @@
     padding: 0!important;
 }
 .side-nav .user-view {
-    height: 35vh;
+    width: 300px;
+    height: 300px;
     padding: 0;
 }
 .side-nav .user-view .background {
@@ -27,6 +28,7 @@
 }
 .layout .tabs {
     overflow-x: unset;
+    overflow-y: auto;
     white-space: unset;
 }
 .layout .tabs .tab {
@@ -53,6 +55,17 @@
 .layout .tabs .tab a.active {
     color: #f44336;
 }
+.layout .tabs .indicator {
+    position: unset!important;
+    height: 0!important;
+    will-change: unset!important;
+}
+@media only screen and (max-width: 992px) {
+    .layout .tabs {
+        display: block
+    }
+}
+
 /*---------------------- SECTION ----------------------*/
 .section {
     background-image: url('../Imagens/Background/about.jpg');
@@ -76,6 +89,9 @@
     box-shadow: none;
 }
 .section .main-section .navbar-fixed nav .nav-wrapper .button-collapse {
+    color: #000;
+}
+.section .main-section nav .brand-logo {
     color: #000;
 }
 .page-about {
