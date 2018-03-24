@@ -1,0 +1,84 @@
+.layout {
+    margin: 0!important;
+    padding: 0!important;
+    height: 100vh;
+}
+/*---------------------- SIDENAV ----------------------*/
+.side-nav {
+    margin: 0!important;
+    padding: 0!important;
+}
+.side-nav .user-view {
+    height: 35vh;
+    padding: 0;
+}
+.side-nav .user-view .background {
+    background-color: #f44336;
+}
+.side-nav .user-view .logo-titulo {
+    margin-left: auto;
+    margin-right: auto;
+}
+.side-nav .user-view h4 {
+    margin: 0;
+}
+.side-nav .user-view h6 {
+    margin-bottom: 0;
+}
+/*---------------------- SECTION ----------------------*/
+.section {
+    background-image: url('../Imagens/Background/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0!important;
+    padding: 0!important;
+}
+.main-section {
+    background-color: rgba(255, 255, 255, 0.92);
+    height: inherit;
+    margin: 0!important;
+    padding: 0!important;
+    display: flex;
+    flex: row nowrap;
+    align-content: center;
+}
+.section .main-section .navbar-fixed nav {
+    border: 0;
+    box-shadow: none;
+}
+.section .main-section .navbar-fixed nav .nav-wrapper .button-collapse {
+    color: #000;
+}
+.page-about {
+    margin: auto!important;
+    padding: 0!important;
+}
+.left-margin {
+    width: 100%;
+}
+@media only screen and (min-width: 993px) {
+    .left-margin {
+        margin-left: 300px;
+    }
+}
+.page-about .left-margin .container h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #3C4858;
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+}
+.page-about .left-margin .container h5 {
+    color: #3C4858;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+.page-about .left-margin .container p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6rem;
+}

@@ -1,105 +1,96 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sam M. Martin - Portfólio</title>
+        <title>Sam M. Martin - Developer</title>
         <meta charset="utf-8">
         <link rel="icon" type="imagem/png" href="Imagens\IconTitle.png">
-        <link rel="stylesheet" href="CSS\style.css">
-        <link rel="stylesheet" href="CSS\font-awesome-4.7.0\css\font-awesome.css">
-        <link href="https://fonts.googleapis.com/css?family=Orbitron|Poiret+One|Rajdhani|Roboto:300|Saira" rel="stylesheet">
-        <script type="text/javascript" src="Script\style_Modify.js"></script>
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="CSS/style-material-2.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div class="container-Main">
-        <!-- Capa --> 
-            <header>
-                <div id="headerMAIN">
-                    <div class="rowContainer spaceTitle">
-                        <a href="index.html" class="link_blue">
-                            <h1 class="titleHOME titleSUP">Sam M. Martin</h1>
-                        </a>
+        <!-- Page Layout -->
+        <div class="row layout">
+            <!-- SideNav -->
+            <ul id="slide-out" class="side-nav fixed">
+                <li>
+                    <div class="user-view valign-wrapper">
+                        <div class="background"></div>
+                        <div class="logo-titulo">
+                            <h4 class="white-text right-align thin">Sam <strong>M. Martin</strong></h4>
+                            <h6 class="right-align light">Developer</h6>
+                            <h6 class="right-align light">Musician</h6>
+                        </div>
                     </div>
-                    <div class="rowContainer icones">
-                        <a href="developer.html">
-                            <img class="iconTitle" title="Developer" src="Imagens\coding.png">
-                        </a>
-                        <a href="musician.html">
-                            <img class="iconTitle" title="Musician" src="Imagens\piano.png">
-                        </a>
-                        <a href="sound.hmtl">
-                            <img class="iconTitle" title="Sound Engineer" src="Imagens\wave2.png">
-                        </a>
-                        <a href="producer.html">
-                            <img class="iconTitle" title="Music Producer" src="Imagens\mixer.png">
-                        </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">person</i> Perfil
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">history</i> Experiencia
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">view_quilt</i> Projetos
+                    </a>
+                </li>
+                <li><div class="divider"></div></li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">people</i>Redes Sociais
+                    </a>
+                </li>
+            </ul>
+            <!-- Section -->
+            <div class="section">
+                <div class="main-section">
+                    <div class="navbar-fixed hide-on-large-only">
+                        <nav class="transparent">
+                            <div class="nav-wrapper">
+                                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">apps</i></a>
+                            </div>
+                        </nav>
                     </div>
-                </div>
-            </header>
-        <!-- About Me -->    
-            <section class="row corpo">
-                <div class="col">
-                    <div class="row-Heading">
-                        <h2>Sobre</h2>
-                    </div>
-                    <div class="row-Content">
-                        <div class="col section-1">
-                            <article class="description">
-                                <h4><strong>Samuel M. M.</strong><br>Desenvolvedor | Músico | Técnico de Som | Produtor Musical</h4>
-                                <br><br>
-                                <p class="article">Um cara que gosta de computadores e quis descobrir como eles funcionam.
-                                    Um apaixonado por música. Por influência dos pais entrou no mundo da música aos 7 anos de idade.
-                                    Nas horas vagas ataca de produtor musical, colocando todo sua expertise e referência musical
-                                    nos trabalhos autorais e covers.
-                                    Técnico de Som sempre que tem um tempinho na agenda sempre lotada.<br><br>
-                                    Atualmente trabalhando no desenvolvimento de um projeto voltado para
-                                    controle do tráfego nas vias da cidade de São Luís. O principal diferencial do projeto é a
-                                    utilização de reconhecimento de objetos em imagens, através da utilização de redes neurais
-                                    no processamento dessas imagens, além de um sistema de inteligência artificial que irá prover 
-                                    num futuro próximo a total automatização do controle semafórico da capital. 
-                                    Projeto nascido através da parceria entre a UNDB e a SMTT.
-                                    Trabalhando também no desenvolvimento de aplicação para controle físico de acesso 
-                                    voltada para a plataforma Android, projeto esse que se baseia minha monografia.
-                                    Trabalhando arduamente no desenvolvimento do meu site (portfólio) e, do site 
-                                    <a class="link_blue" href="https://lordsimperium.github.io/"><strong>Lord's IMPERIUM</strong></a>&nbsp;&#x2014;
-                                    um livro de mesmo título, o qual está em processo de criação, é a base das histórias e grafismo disponíveis no site.<br><br>
+                    <div class="col s12 right page-about valign-wrapper">
+                        <div class="left-margin">
+                            <div class="container">
+                                <h2 class="center-align">Sobre</h2>
+                                <h5>Desenvolver | Músico | Técnico de Som | Produtor Musical</h5>
+                                <p>
+                                    Nascido aos 14 (quatorze) dias do mês de setembro do ano de 1991, eu, um cara que aos 7 (sete) anos de idade
+                                    foi iniciado no mundo da música, por influência do meu pai, teve uma infância sem muitas desventuras, dificuldades 
+                                    ou problemas. Adolescência não se pode dizer o mesmo. Descobriu no colegial o gosto pelo mundo das exatas,
+                                    matemática, física e química tomavam 8 (oito) horas diárias do seu tempo. Durante a última série do colegial 
+                                    percebeu sua vocação para o mundo da engenharia e tecnologia. Aos 15 (quinze) anos trocou a guitarra pelo piano,
+                                    instrumento esse que virou sua paixão. Desde dos 10 anos estudava e aplicava seus conhecimentos no campo do áudio
+                                    profissional. No ano de 2012 começou a brincar com a produção musical, criando desde músicas autorias à 
+                                    adaptações de músicas conhecidas do grande público (contudo, trata-se de um hobby, um trabalho bem amador, por
+                                    assim dizer).<br><br>
+                                    Em 2008 iniciou o curso de Análises Química no IFMA (antigo CEFET), a partir dali consolidou o desejo pela engenharia.
+                                    Em 2011 entrou para o curso de Construção de Edificios, mas decidiu que não era aquela área que desejava. 
+                                    Em 2012 veio a virada, passou para Ciência da Computação na UFF - RJ, contudo, devido problemas pessoais não pôde 
+                                    ir adiante nessa empreitada. Em Julho daquele mesmo ano passou para o curso de Engenharia Eletrônica e de Computação
+                                    da UFRJ - RJ. Entretanto, devido a problemas de ordem familiar, precisou voltar para sua terra natal, trancando o
+                                    curso que tanto almejou. Em 2013 passou para Sistemas de Informação pela UNDB - MA, o qual está na fase final.<br><br>
                                     Amo viajar, Amo carros, Amo piano, Amo o meu DEUS.<br>
-                                    As músicas que produzo hospedo no <a class="link_blue" href="https://soundcloud.com/"><strong>Soundcloud</strong> <i class="fa fa-soundcloud"></i></a>
-                                </p><br><br>
-                            </article>
-                        </div>
-                        <div class="col section-2 container-Image">
-                            <div class="row row-Portrait">
-                                <img class="image-Circle" src="Imagens\perfil.jpg">
-                                <img class="image-Circle foto2" src="Imagens\perfil_2.jpg">
-                            </div>                            
+                                    As músicas que produzo hospedo no <a href="https://soundcloud.com/samuel-meireles-martins">Soundcloud</a>.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        <!-- Rodapé -->    
-            <footer class="row rodape">
-                <div class="col centralizado">
-                    <div class="row-Contato">
-                        <h2>Contato</h2>
-                        <a class="link_blue" href="https://goo.gl/Qn5txW">
-                            <h4 class="local">São Luís - MA</h4>
-                        </a>
-                        <h4 class="phone">(98) 98187-3082</h4>
-                        <h4 class="phone">(98) 98412-6367</h4>
-                        <h4 class="email">sam.c3tech@gmail.com</h4>
-                        <h4 class="email">smeirelesmartins@gmail.com</h4>
-                    </div>
-                </div>
-                <div class="col centralizado">
-                    <div class="row-SocialMedia">
-                        <h2>Social Media</h2>
-                        <a class="link_blue" href="https://goo.gl/Ekn8hh"><h4 class="face">Facebook</h4></a>
-                        <a class="link_blue" href="https://goo.gl/ADmyNo"><h4 class="insta">Instagram</h4></a>
-                        <a class="link_blue" href="https://goo.gl/gM5CLM"><h4 class="sound">Soundcloud</h4></a>
-                        <a class="link_blue" href="https://www.youtube.com/user/Samucaline530"><h4 class="youtube">Youtube</h4></a>    
-                    </div>
-                </div>
-            </footer>
+            </div>
         </div>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.js"></script>
     </body>
 </html>
