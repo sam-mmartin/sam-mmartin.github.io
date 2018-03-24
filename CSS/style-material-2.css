@@ -25,6 +25,34 @@
 .side-nav .user-view h6 {
     margin-bottom: 0;
 }
+.layout .tabs {
+    overflow-x: unset;
+    white-space: unset;
+}
+.layout .tabs .tab {
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 48px;
+    list-style-type: none;
+    text-align: left;
+    white-space: normal;
+    display: list-item;
+}
+.layout .tabs .tab a {
+    color: rgba(0, 0, 0, 0.87);
+    display: block;
+    font-size: 14px!important;
+    font-weight: 500!important;
+    height: 48px!important;
+    line-height: 48px!important;
+    padding: 0 32px!important;
+    text-overflow: unset!important;
+    overflow: unset!important;
+}
+.layout .tabs .tab a.active {
+    color: #f44336;
+}
 /*---------------------- SECTION ----------------------*/
 .section {
     background-image: url('../Imagens/Background/about.jpg');

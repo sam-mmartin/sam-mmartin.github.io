@@ -15,7 +15,7 @@
         <!-- Page Layout -->
         <div class="row layout">
             <!-- SideNav -->
-            <ul id="slide-out" class="side-nav fixed">
+            <ul id="slide-out" class="tabs side-nav fixed">
                 <li>
                     <div class="user-view valign-wrapper">
                         <div class="background"></div>
@@ -26,24 +26,24 @@
                         </div>
                     </div>
                 </li>
-                <li>
-                    <a href="#!">
+                <li class="tab">
+                    <a href="#aboutME" class="active" onclick="Materialize.fadeInImage('#aboutME')">
                         <i class="material-icons">person</i> Perfil
                     </a>
                 </li>
-                <li>
-                    <a href="#!">
+                <li class="tab">
+                    <a href="#experience" onclick="Materialize.fadeInImage('#experience')">
                         <i class="material-icons">history</i> Experiencia
                     </a>
                 </li>
-                <li>
-                    <a href="#!">
+                <li class="tab">
+                    <a href="#projects" onclick="Materialize.fadeInImage('#projects')">
                         <i class="material-icons">view_quilt</i> Projetos
                     </a>
                 </li>
                 <li><div class="divider"></div></li>
-                <li>
-                    <a href="#!">
+                <li class="tab">
+                    <a href="#socialNetwork" onclick="Materialize.fadeInImage('#socialNetwork')">
                         <i class="material-icons">people</i>Redes Sociais
                     </a>
                 </li>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="col s12 right page-about valign-wrapper">
                         <div class="left-margin">
-                            <div class="container">
+                            <div class="container" id="aboutME">
                                 <h2 class="center-align">Sobre</h2>
                                 <h5>Desenvolver | Músico | Técnico de Som | Produtor Musical</h5>
                                 <p>
@@ -82,6 +82,15 @@
                                     Amo viajar, Amo carros, Amo piano, Amo o meu DEUS.<br>
                                     As músicas que produzo hospedo no <a href="https://soundcloud.com/samuel-meireles-martins">Soundcloud</a>.
                                 </p>
+                            </div>
+                            <div class="container" id="experience">
+                                <h2 class="center-align">Experiência Profissional</h2>
+                            </div>
+                            <div class="container" id="projects">
+                                <h2 class="center-align">Projetos</h2>
+                            </div>
+                            <div class="container" id="socialNetwork">
+                                <h2 class="center-align">Redes Sociais</h2>
                             </div>
                         </div>
                     </div>
