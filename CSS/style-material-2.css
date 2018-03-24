@@ -126,6 +126,11 @@
     font-size: 16px;
     line-height: 1.6rem;
 }
+@media only screen and (max-width: 992px) {
+    .page-about .left-margin .container p {
+        text-align: justify;
+    }
+}
 #aboutME p a {
     color: #f50;
 }
