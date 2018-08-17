@@ -243,7 +243,6 @@
     <script>
         $.getJSON("estatisticas.json", function (data) {
             var dados = data;
-            console.log(dados[0]);
             $("#tracks").html(dados[0]);
             $("#follow").html(dados[1]);
         });
