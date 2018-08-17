@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sam M. Martin - Portfólio</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="imagem/png" href="Imagens\IconTitle.png">
+        <link rel="stylesheet" href="CSS\style.css">
+        <link rel="stylesheet" href="CSS\font-awesome-4.7.0\css\font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron|Poiret+One|Rajdhani|Roboto:300|Saira" rel="stylesheet">
+    </head>
+    <body onload="play_evento()">
+        <div class="container-Main">
+        <!-- Capa -->    
+            <header class="row capa-Soundcloud">
+                <div class="col">
+                    <div class="row-Soundcloud header-1">
+                        <div class="coluna-1">
+                            <a href="index.html">
+                                <img class="arrow-Back" src="Imagens\arrow_back_white.png">
+                            </a>        
+                        </div>
+                        <div class="coluna-2">
+                            <img class="image-Circle-Sound" src="Imagens\perfil.jpg">
+                        </div>
+                    </div>
+                    <div class="row-Souncloud header-2">
+                        <div class="col estation">
+                            <h1>Sam M. Martin</h1>
+                            <h5 id="followers">42</h5>
+                            <button type="button" class="btn-podcast">Iniciar estação</button>
+                        </div>
+                        <div class="row playlist">
+                            <button type="button" class="btn-playlist btn-faixas">FAIXAS</button>
+                            <button type="button" class="btn-playlist btn-info">INFO</button>
+                        </div>
+                    </div>
+                </div>    
+            </header>
+        <!-- About Me -->    
+            <section class="row corpo fundo">
+                <div class="col musicas" id="player-Sound">
+                    <div class="row-Player">
+                        <audio id="audio1" class="LineUP" src="Music\01 Suas Mentiras.mp3"></audio>
+                        <a href="#" id="1" class="btn-player" onclick="clique(this); play(); contador_execucao()">
+                            <img class="art-Album" src="Imagens\suas_mentiras.jpeg">
+                            <div class="row-btn">
+                                <h5>Sam M Martin</h5>
+                                <span class="tempo">00:00</span>
+                            </div>
+                            <h4>Suas Mentiras - Sam M. Martin</h4>
+                            <span class="cont_Exe">0</span>
+                            <progress class="barra_progresso" max="0" value="0"></progress>
+                        </a>
+                    </div>
+                    <div class="row-Player">
+                        <audio id="audio2" class="LineUP" src="Music\04 Numb.mp3"></audio>
+                        <a href="#" id="2" class="btn-player" onclick="clique(this); play(); contador_execucao()">
+                            <img class="art-Album" src="Imagens\lp.jpg">
+                            <div class="row-btn">
+                                <h5>Sam M Martin</h5>
+                                <span class="tempo">00:00</span>
+                            </div>
+                            <h4>Numb - Linkin Park (Cover) - A Tribute to Chester Bennigton</h4>
+                            <span class="cont_Exe">0</span>
+                            <progress class="barra_progresso" max="0" value="0"></progress>
+                        </a>
+                    </div>
+                    <div class="row-Player">
+                        <audio id="audio3" class="LineUP" src="Music\02 Estou Contigo.mp3"></audio>
+                        <a href="#" id="3" class="btn-player" onclick="clique(this); play(); contador_execucao()">
+                            <img class="art-Album" src="Imagens\red.jpeg">
+                            <div class="row-btn">
+                                <h5>Sam M Martin</h5>
+                                <span class="tempo">00:00</span>
+                            </div>
+                            <h4>Estou Contigo - Sam M. Martin</h4>
+                            <span class="cont_Exe">0</span>
+                            <progress class="barra_progresso" max="0" value="0"></progress>
+                        </a>
+                    </div>
+                    <div class="row-Player">
+                        <audio id="audio4" class="LineUP" src="Music\Nobody Love - playback.mp3"></audio>
+                        <a href="#" id="4" class="btn-player" onclick="clique(this); play(); contador_execucao()">
+                            <img class="art-Album" src="Imagens\Nobody Love.jpg">
+                            <div class="row-btn">
+                                <h5>Sam M Martin</h5>
+                                <span class="tempo">00:00</span>
+                            </div>
+                            <h4>Nobody Love - Tori Kelly (Cover) - Instrumental</h4>
+                            <span class="cont_Exe">0</span>
+                            <progress class="barra_progresso" max="0" value="0"></progress>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        <!-- Rodapé -->    
+            <footer class="row rodape">
+                <div class="col centralizado">
+                    <div class="row-Contato">
+                        <h2>Contato</h2>
+                        <a href="https://goo.gl/Qn5txW">
+                            <h4 class="local">São Luís - MA</h4>
+                        </a>
+                        <h4 class="phone">(98) 98187-3082</h4>
+                        <h4 class="phone">(98) 98412-6367</h4>
+                        <h4 class="email">sam.c3tech@gmail.com</h4>
+                        <h4 class="email">smeirelesmartins@gmail.com</h4>
+                    </div>
+                </div>
+                <div class="col centralizado">
+                    <div class="row-SocialMedia">
+                        <h2>Social Media</h2>
+                        <a href="https://goo.gl/Ekn8hh"><h4 class="face">Facebook</h4></a>
+                        <a href="https://goo.gl/ADmyNo"><h4 class="insta">Instagram</h4></a>
+                        <a href="https://goo.gl/gM5CLM"><h4 class="sound">Soundcloud</h4></a>
+                        <a href="https://www.youtube.com/user/Samucaline530"><h4 class="youtube">Youtube</h4></a>    
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript" src="Script\audio_Player.js"></script>
+    </body>
+</html>
