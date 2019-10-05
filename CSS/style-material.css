@@ -227,11 +227,11 @@ body .profile img {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 500;
-    max-width: 100px;
+    width: 110px;
     text-align: center;
     color: #555;
     transition: all .3s;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border: 0;
     display: block;
     text-overflow: unset;
