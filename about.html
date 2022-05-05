@@ -1,141 +1,181 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sam M. Martin - Developer</title>
-        <meta charset="utf-8">
-        <link rel="icon" type="imagem/png" href="Imagens\IconTitle.png">
-        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-        <link rel="stylesheet" href="CSS/style-material-2.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-    <body>
-        <!-- Page Layout -->
-        <div class="row layout">
-            <!-- SideNav -->
-            <ul id="slide-out" class="tabs side-nav fixed">
-                <li>
-                    <div class="user-view valign-wrapper">
-                        <div class="background"></div>
-                        <div class="logo-titulo">
-                            <h4 class="white-text right-align thin">Sam <strong>M. Martin</strong></h4>
-                            <h6 class="right-align light">Developer</h6>
-                            <h6 class="right-align light">Musician</h6>
+
+<head>
+    <title>Sam M. Martin - Developer</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="imagem/png" href="Imagens\IconTitle.png">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="CSS/style-material-2.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- Page Layout -->
+    <div class="row layout">
+        <!-- SideNav -->
+        <ul id="slide-out" class="tabs side-nav fixed">
+            <li>
+                <div class="user-view valign-wrapper">
+                    <div class="background"></div>
+                    <div class="logo-titulo">
+                        <h4 class="white-text right-align thin">Sam <strong>M. Martin</strong></h4>
+                        <h6 class="right-align light">Developer</h6>
+                        <h6 class="right-align light">Musician</h6>
+                    </div>
+                </div>
+            </li>
+            <li class="tab">
+                <a href="#aboutME" class="active" onclick="Materialize.fadeInImage('#aboutME')">
+                    <i class="material-icons">person</i> Perfil
+                </a>
+            </li>
+            <li class="tab">
+                <a href="#experience" onclick="Materialize.fadeInImage('#experience')">
+                    <i class="material-icons">history</i> Experiencia
+                </a>
+            </li>
+            <li class="tab">
+                <a href="#projects" onclick="Materialize.fadeInImage('#projects')">
+                    <i class="material-icons">view_quilt</i> Projetos
+                </a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li class="tab">
+                <a href="#socialNetwork" onclick="Materialize.fadeInImage('#socialNetwork')">
+                    <i class="material-icons">people</i>Redes Sociais
+                </a>
+            </li>
+        </ul>
+        <!-- Section -->
+        <div class="section">
+            <div class="main-section">
+                <!--Navbar Mobile -->
+                <div class="navbar-fixed hide-on-large-only">
+                    <nav class="transparent nav-modify-style">
+                        <div class="nav-wrapper">
+                            <a href="#" data-activates="slide-out" class="button-collapse"><i
+                                    class="material-icons">apps</i></a>
+                            <a href="index.html" class="brand-logo right"><i class="material-icons">arrow_back</i></a>
                         </div>
-                    </div>
-                </li>
-                <li class="tab">
-                    <a href="#aboutME" class="active" onclick="Materialize.fadeInImage('#aboutME')">
-                        <i class="material-icons">person</i> Perfil
-                    </a>
-                </li>
-                <li class="tab">
-                    <a href="#experience" onclick="Materialize.fadeInImage('#experience')">
-                        <i class="material-icons">history</i> Experiencia
-                    </a>
-                </li>
-                <li class="tab">
-                    <a href="#projects" onclick="Materialize.fadeInImage('#projects')">
-                        <i class="material-icons">view_quilt</i> Projetos
-                    </a>
-                </li>
-                <li><div class="divider"></div></li>
-                <li class="tab">
-                    <a href="#socialNetwork" onclick="Materialize.fadeInImage('#socialNetwork')">
-                        <i class="material-icons">people</i>Redes Sociais
-                    </a>
-                </li>
-            </ul>
-            <!-- Section -->
-            <div class="section">
-                <div class="main-section">
-                    <!--Navbar Mobile -->
-                    <div class="navbar-fixed hide-on-large-only">
-                        <nav class="transparent nav-modify-style">
-                            <div class="nav-wrapper">
-                                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">apps</i></a>
-                                <a href="index.html" class="brand-logo right"><i class="material-icons">arrow_back</i></a>
-                            </div>
-                        </nav>
-                    </div>
-                    <!-- Pages About -->
-                    <div class="col s12 right page-about valign-wrapper">
-                        <div class="left-margin">
-                            <!-- About Me -->
-                            <div class="container" id="aboutME">
-                                <h2 class="center-align">Sobre</h2>
-                                <h5>Desenvolvedor | Músico | Técnico de Som | Produtor Musical</h5>
-                                <p>
-                                    Nascido aos 14 (quatorze) dias do mês de setembro do ano de 1991, eu, um cara que aos 7 (sete) anos de idade
-                                    foi iniciado no mundo da música, por influência do meu pai, teve uma infância sem muitas desventuras, dificuldades 
-                                    ou problemas. Adolescência não se pode dizer o mesmo. Descobriu no colegial o gosto pelo mundo das exatas,
-                                    matemática, física e química tomavam 8 (oito) horas diárias do seu tempo. Durante a última série do colegial 
-                                    percebeu sua vocação para o mundo da engenharia e tecnologia. Aos 15 (quinze) anos trocou a guitarra pelo piano,
-                                    instrumento esse que virou sua paixão. Desde dos 10 anos estudava e aplicava seus conhecimentos no campo do áudio
-                                    profissional. No ano de 2012 começou a brincar com a produção musical, criando desde músicas autorias à 
-                                    adaptações de músicas conhecidas do grande público (contudo, trata-se de um hobby, um trabalho bem amador, por
-                                    assim dizer).<br><br>
-                                    Em 2008 iniciou o curso de Análises Química no IFMA (antigo CEFET), a partir dali consolidou o desejo pela engenharia.
-                                    Em 2011 entrou para o curso de Construção de Edificios, mas decidiu que não era aquela área que desejava. 
-                                    Em 2012 veio a virada, passou para Ciência da Computação na UFF - RJ, contudo, devido problemas pessoais não pôde 
-                                    ir adiante nessa empreitada. Em Julho daquele mesmo ano passou para o curso de Engenharia Eletrônica e de Computação
-                                    da UFRJ - RJ. Entretanto, devido a problemas de ordem familiar, precisou voltar para sua terra natal, trancando o
-                                    curso que tanto almejou. Em 2013 passou para Sistemas de Informação pela UNDB - MA, o qual está na fase final.<br><br>
-                                    Amo viajar, Amo carros, Amo piano, Amo o meu DEUS.<br>
-                                    As músicas que produzo hospedo no <a href="https://soundcloud.com/samuel-meireles-martins" target="_blank">Soundcloud</a>.
-                                </p>
-                            </div>
-                            <!-- Experiencia -->
-                            <div class="container" id="experience">
-                                <h2 class="center-align">Experiência Profissional</h2>
-                                <p>
-                                    Aos 17 (dezessete) anos de idade entrei no mercado de trabalho. Inicialmente dando aulas de Física e Química para
-                                    alunos do ensino médio. Um ano depois eu passei a ensinar matemática e ciências naturais para classes do colegial.
-                                    Em 2012 devido ter ido estudar na UFRJ (Rio de Janeiro - RJ), trabalhei um curto espaço de tempo nas lojas Casa &amp; Vídeo
-                                    como operador de loja, uma vaga de emprego que entrei somente para ganhar um extra.<br>
-                                    Ao voltar ao Maranhão, passei dá aulas de informática nos laboratórios das escolas do município onde eu morava, além de
-                                    realizar a manutenção das máquinas.<br><br>
-                                    Nas horas vagas faço bicos como autônomo na área da Informática, áudio profissional e música.<br>
-                                    Realizo desde a manutenção de computadores até o desenvolvimento de aplicações sejam elas mobile, desktop ou web.<br>
-                                    No campo do áudio profissional atuo como técnico de som e roadie nos mais diversos tipos de eventos. Bem como realizo
-                                    consultoria para pessoas físicas, empresas, igrejas, casas de shows que desejam montar algum tipo de estrutura sonora.<br>
-                                    Na área musical ataco como multi musicista, tocando em casamentos, eventos, formaturas, shows, igrejas, e realizando
-                                    gravação de tracks para produção musical. 
-                                </p>
-                            </div>
-                            <!-- Projetos -->
-                            <div class="container" id="projects">
-                                <h2 class="center-align">Projetos</h2>
-                            </div>
-                            <!-- Redes Sociais -->
-                            <div class="container" id="socialNetwork">
-                                <h2 class="center-align">Redes Sociais</h2>
-                                <div class="redeSocial">
-                                    <a href="https://www.facebook.com/samDJmartin" target="_blank" class="tooltipped facebook" data-position="right" data-delay="50" data-tooltip="Curta nossa página no Facebook">
-                                        <i class="fab fa-facebook-square"></i>Facebook
-                                    </a>
-                                    <a href="https://goo.gl/ADmyNo" target="_blank" class="tooltipped instagram" data-position="right" data-delay="50" data-tooltip="Siga nosso Instagram">
-                                        <i class="fab fa-instagram"></i>Instagram
-                                    </a>
-                                    <a href="https://www.youtube.com/user/Samucaline530" target="_blank" class="tooltipped youtube" data-position="right" data-delay="50" data-tooltip="Inscreva-se">
-                                        <i class="fab fa-youtube"></i>Youtube
-                                    </a>
-                                    <a href="https://www.soundcloud.com/samuel-meireles-martins" target="_blank" class="tooltipped soundcloud" data-position="right" data-delay="50" data-tooltip="Listen to free Music and Podcasts">
-                                        <i class="fab fa-soundcloud"></i>Soundcloud
-                                    </a>
-                                </div>
+                    </nav>
+                </div>
+                <!-- Pages About -->
+                <div class="col s12 right page-about valign-wrapper">
+                    <div class="left-margin">
+                        <!-- About Me -->
+                        <div class="container" id="aboutME">
+                            <h2 class="center-align">Sobre</h2>
+                            <h5>Desenvolvedor | Músico | Técnico de Som | Produtor Musical</h5>
+                            <p>
+                                Nascido aos 14 (quatorze) dias do mês de setembro do ano de 1991, eu, um cara que aos 7
+                                (sete) anos de idade
+                                foi iniciado no mundo da música, por influência do meu pai, teve uma infância sem muitas
+                                desventuras, dificuldades
+                                ou problemas. Adolescência não se pode dizer o mesmo. Descobriu no colegial o gosto pelo
+                                mundo das exatas,
+                                matemática, física e química tomavam 8 (oito) horas diárias do seu tempo. Durante a
+                                última série do colegial
+                                percebeu sua vocação para o mundo da engenharia e tecnologia. Aos 15 (quinze) anos
+                                trocou a guitarra pelo piano,
+                                instrumento esse que virou sua paixão. Desde dos 10 anos estudava e aplicava seus
+                                conhecimentos no campo do áudio
+                                profissional. No ano de 2012 começou a brincar com a produção musical, criando desde
+                                músicas autorias à
+                                adaptações de músicas conhecidas do grande público (contudo, trata-se de um hobby, um
+                                trabalho bem amador, por
+                                assim dizer).<br><br>
+                                Em 2008 iniciou o curso de Análises Química no IFMA (antigo CEFET), a partir dali
+                                consolidou o desejo pela engenharia.
+                                Em 2011 entrou para o curso de Construção de Edificios, mas decidiu que não era aquela
+                                área que desejava.
+                                Em 2012 veio a virada, passou para Ciência da Computação na UFF - RJ, contudo, devido
+                                problemas pessoais não pôde
+                                ir adiante nessa empreitada. Em Julho daquele mesmo ano passou para o curso de
+                                Engenharia Eletrônica e de Computação
+                                da UFRJ - RJ. Entretanto, devido a problemas de ordem familiar, precisou voltar para sua
+                                terra natal, trancando o
+                                curso que tanto almejou. Em 2013 passou para Sistemas de Informação pela UNDB - MA, o
+                                qual está na fase final.<br><br>
+                                Amo viajar, Amo carros, Amo piano, Amo o meu DEUS.<br>
+                                As músicas que produzo hospedo no <a
+                                    href="https://soundcloud.com/samuel-meireles-martins"
+                                    target="_blank">Soundcloud</a>.
+                            </p>
+                        </div>
+                        <!-- Experiencia -->
+                        <div class="container" id="experience">
+                            <h2 class="center-align">Experiência Profissional</h2>
+                            <p>
+                                Aos 17 (dezessete) anos de idade entrei no mercado de trabalho. Inicialmente dando aulas
+                                de Física e Química para
+                                alunos do ensino médio. Um ano depois eu passei a ensinar matemática e ciências naturais
+                                para classes do colegial.
+                                Em 2012 devido ter ido estudar na UFRJ (Rio de Janeiro - RJ), trabalhei um curto espaço
+                                de tempo nas lojas Casa &amp; Vídeo
+                                como operador de loja, uma vaga de emprego que entrei somente para ganhar um extra.<br>
+                                Ao voltar ao Maranhão, passei dá aulas de informática nos laboratórios das escolas do
+                                município onde eu morava, além de
+                                realizar a manutenção das máquinas.<br><br>
+                                Nas horas vagas faço bicos como autônomo na área da Informática, áudio profissional e
+                                música.<br>
+                                Realizo desde a manutenção de computadores até o desenvolvimento de aplicações sejam
+                                elas mobile, desktop ou web.<br>
+                                No campo do áudio profissional atuo como técnico de som e roadie nos mais diversos tipos
+                                de eventos. Bem como realizo
+                                consultoria para pessoas físicas, empresas, igrejas, casas de shows que desejam montar
+                                algum tipo de estrutura sonora.<br>
+                                Na área musical ataco como multi musicista, tocando em casamentos, eventos, formaturas,
+                                shows, igrejas, e realizando
+                                gravação de tracks para produção musical.
+                            </p>
+                        </div>
+                        <!-- Projetos -->
+                        <div class="container" id="projects">
+                            <h2 class="center-align">Projetos</h2>
+                        </div>
+                        <!-- Redes Sociais -->
+                        <div class="container" id="socialNetwork">
+                            <h2 class="center-align">Redes Sociais</h2>
+                            <div class="redeSocial">
+                                <a href="https://www.facebook.com/samDJmartin" target="_blank"
+                                    class="tooltipped facebook" data-position="right" data-delay="50"
+                                    data-tooltip="Curta nossa página no Facebook">
+                                    <i class="fab fa-facebook-square"></i>Facebook
+                                </a>
+                                <a href="https://www.instagram.com/smeirelesmartins/" target="_blank"
+                                    class="tooltipped instagram" data-position="right" data-delay="50"
+                                    data-tooltip="Siga nosso Instagram">
+                                    <i class="fab fa-instagram"></i>Instagram
+                                </a>
+                                <a href="https://www.youtube.com/user/Samucaline530" target="_blank"
+                                    class="tooltipped youtube" data-position="right" data-delay="50"
+                                    data-tooltip="Inscreva-se">
+                                    <i class="fab fa-youtube"></i>Youtube
+                                </a>
+                                <a href="https://www.soundcloud.com/samuel-meireles-martins" target="_blank"
+                                    class="tooltipped soundcloud" data-position="right" data-delay="50"
+                                    data-tooltip="Listen to free Music and Podcasts">
+                                    <i class="fab fa-soundcloud"></i>Soundcloud
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="materialize/js/materialize.js"></script>
-        <script type="text/javascript" src="Script/navbar_white.js"></script>
-    </body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="Script/navbar_white.js"></script>
+</body>
+
 </html>
