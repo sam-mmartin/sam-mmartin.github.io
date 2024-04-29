@@ -1,170 +1,170 @@
 .layout {
-    margin: 0!important;
-    padding: 0!important;
-    height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh;
 }
 /*---------------------- SIDENAV ----------------------*/
 .side-nav {
-    margin: 0!important;
-    padding: 0!important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .side-nav .user-view {
-    width: 300px;
-    height: 300px;
-    padding: 0;
+  width: 300px;
+  height: 300px;
+  padding: 0;
 }
 .side-nav .user-view .background {
-    background-color: #f44336;
+  background-color: #f44336;
 }
 .side-nav .user-view .logo-titulo {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .side-nav .user-view h4 {
-    margin: 0;
+  margin: 0;
 }
 .side-nav .user-view h6 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .layout .tabs {
-    overflow-x: unset;
-    overflow-y: auto;
-    white-space: unset;
+  overflow-x: unset;
+  overflow-y: auto;
+  white-space: unset;
 }
 .layout .tabs .tab {
-    text-transform: none;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 48px;
-    list-style-type: none;
-    text-align: left;
-    white-space: normal;
-    display: list-item;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 48px;
+  list-style-type: none;
+  text-align: left;
+  white-space: normal;
+  display: list-item;
 }
 .layout .tabs .tab a {
-    color: rgba(0, 0, 0, 0.87);
-    display: block;
-    font-size: 16px!important;
-    font-weight: 500!important;
-    height: 48px!important;
-    line-height: 48px!important;
-    padding: 0 32px!important;
-    text-overflow: unset!important;
-    overflow: unset!important;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  height: 48px !important;
+  line-height: 48px !important;
+  padding: 0 32px !important;
+  text-overflow: unset !important;
+  overflow: unset !important;
 }
 .layout .tabs .tab a.active {
-    color: #f44336;
+  color: #f44336;
 }
 .layout .tabs .indicator {
-    position: unset!important;
-    height: 0!important;
-    will-change: unset!important;
+  position: unset !important;
+  height: 0 !important;
+  will-change: unset !important;
 }
 @media only screen and (max-width: 992px) {
-    .layout .tabs {
-        display: block
-    }
+  .layout .tabs {
+    display: block;
+  }
 }
 
 /*---------------------- SECTION ----------------------*/
 .section {
-    background-image: url('../Imagens/Background/about.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    margin: 0!important;
-    padding: 0!important;
+  background-image: url("../assets/img/background/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .main-section {
-    background-color: rgba(255, 255, 255, 0.92);
-    height: inherit;
-    margin: 0!important;
-    padding: 0!important;
-    display: flex;
-    flex: row nowrap;
-    align-content: center;
+  background-color: rgba(255, 255, 255, 0.92);
+  height: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex: row nowrap;
+  align-content: center;
 }
 .section .main-section .navbar-fixed nav {
-    border: 0;
-    box-shadow: none;
+  border: 0;
+  box-shadow: none;
 }
 .section .main-section .navbar-fixed nav .nav-wrapper .button-collapse {
-    color: #000;
+  color: #000;
 }
 .section .main-section nav .brand-logo {
-    color: #000;
+  color: #000;
 }
 .page-about {
-    margin: auto!important;
-    padding: 0!important;
+  margin: auto !important;
+  padding: 0 !important;
 }
 .left-margin {
-    width: 100%;
+  width: 100%;
 }
 @media only screen and (min-width: 993px) {
-    .left-margin {
-        margin-left: 300px;
-    }
+  .left-margin {
+    margin-left: 300px;
+  }
 }
 .page-about .left-margin .container h2 {
-    margin-top: 0;
-    margin-bottom: 40px;
-    color: #3C4858;
-    font-weight: 700;
-    font-family: "Roboto Slab", "Times New Roman", serif;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #3c4858;
+  font-weight: 700;
+  font-family: "Roboto Slab", "Times New Roman", serif;
 }
 .page-about .left-margin .container h5 {
-    color: #3C4858;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5em;
+  color: #3c4858;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5em;
 }
 .page-about .left-margin .container p {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.6rem;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6rem;
 }
 @media only screen and (max-width: 992px) {
-    .page-about .left-margin .container p {
-        text-align: justify;
-    }
+  .page-about .left-margin .container p {
+    text-align: justify;
+  }
 }
 #aboutME p a {
-    color: #f50;
+  color: #f50;
 }
 .redeSocial {
-    border: solid #999; 
-    border-width: 0 0 0 4px;
-    display: flex;
-    flex-flow: column nowrap; 
-    justify-content: left;
-    padding-left: 20px;
-    align-items: center;
+  border: solid #999;
+  border-width: 0 0 0 4px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+  padding-left: 20px;
+  align-items: center;
 }
 .redeSocial a {
-    margin: auto auto 0 0;
-    height: 48px;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 48px;
+  margin: auto auto 0 0;
+  height: 48px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 48px;
 }
 .redeSocial i {
-    margin: auto;
-    height: 48px;
-    line-height: 48px;
-    padding-right: 20px;
+  margin: auto;
+  height: 48px;
+  line-height: 48px;
+  padding-right: 20px;
 }
 .facebook {
-    color: #4267b2;
+  color: #4267b2;
 }
 .instagram {
-    color: #d10869;
+  color: #d10869;
 }
 .youtube {
-    color: hsl(0, 100%, 50%);
+  color: hsl(0, 100%, 50%);
 }
 .soundcloud {
-    color: #f50;
+  color: #f50;
 }
