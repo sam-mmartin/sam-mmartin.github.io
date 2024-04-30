@@ -190,6 +190,7 @@
       <div class="container">
         <div class="section section-text">
           <div class="row">
+            <!-- 1 Paragraph -->
             <div class="col-md-8 ml-auto mr-auto">
               <h3 class="title">Sobre chaves SSH...</h3>
               <p>
@@ -204,26 +205,25 @@
               </p>
             </div>
 
+            <!-- 2 Paragraph -->
             <div class="col-md-8 ml-auto mr-auto">
-              <h3 class="title">Rest of the Story:</h3>
-              <div class="blockquote undefined">
-                <p>ls -al ~/.ssh</p>
-              </div>
-
+              <h3 class="title">Verificar se há chaves SSH</h3>
               <p>
-                Se você já gerou alguma chave SSH, ira ter um resultado
-                semelhante a este:
+                Antes de gerar uma nova chave SSH, verifique se há chaves
+                existentes no computador local.
               </p>
-              <div class="blockquote undefined">
-                <p>
-                  -rw------- 1 username username 464 Apr 29 10:43 id_ed25519
-                  <br />
-                  -rw-r--r-- 1 username username 108 Apr 29 10:43 id_ed25519.pub
-                  <br />
-                  -rw------- 1 username username 978 Apr 29 10:59 known_hosts
-                </p>
+              <!-- CODE BLOCK -->
+              <div class="info info-horizontal">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>ls -al ~/.ssh</code>
+                  </h3>
+                </div>
               </div>
-
+              <p>
+                Antes de gerar uma nova chave SSH, verifique se há chaves
+                existentes no computador local.
+              </p>
               <p>
                 Se já existem chaves, pule para a seção
                 <strong>Copiar a sua chave SSH pública</strong>.
@@ -245,6 +245,7 @@
             </div>
           </div>
         </div>
+
         <div class="section section-blog-info">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
@@ -312,6 +313,7 @@
             </div>
           </div>
         </div>
+
         <div class="section section-comments">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
