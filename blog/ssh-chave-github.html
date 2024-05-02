@@ -19,6 +19,7 @@
     />
 
     <link href="../assets/css/material-kit.min.css" rel="stylesheet" />
+    <link href="../assets/css/custom-styles.css" rel="stylesheet" />
 
     <link href="../assets/demo/demo.css" rel="stylesheet" />
     <link href="../assets/demo/vertical-nav.css" rel="stylesheet" />
@@ -189,9 +190,10 @@
     <div class="main main-raised">
       <div class="container">
         <div class="section section-text">
+          <!-- LOCAL -->
           <div class="row">
             <!-- 1 Paragraph -->
-            <div class="col-md-8 ml-auto mr-auto">
+            <div class="col-md-10 ml-auto mr-auto">
               <h3 class="title">Sobre chaves SSH...</h3>
               <p>
                 Você pode usar o SSH para executar operações Git em repositórios
@@ -206,41 +208,421 @@
             </div>
 
             <!-- 2 Paragraph -->
-            <div class="col-md-8 ml-auto mr-auto">
+            <div class="col-md-10 ml-auto mr-auto">
               <h3 class="title">Verificar se há chaves SSH</h3>
               <p>
                 Antes de gerar uma nova chave SSH, verifique se há chaves
                 existentes no computador local.
               </p>
+
               <!-- CODE BLOCK -->
-              <div class="info info-horizontal">
+              <div class="info-code mb-4">
                 <div class="description">
                   <h3 class="info-title">
-                    <code>ls -al ~/.ssh</code>
+                    <code><span class="text-white">$</span> ls -al ~/.ssh</code>
                   </h3>
                 </div>
               </div>
+
               <p>
-                Antes de gerar uma nova chave SSH, verifique se há chaves
-                existentes no computador local.
+                Verifique a listagem do diretório para verificar se você já tem
+                uma chave SSH pública. Por padrão, os nomes de arquivos de
+                chaves públicas com suporte para o GitHUb são um dos seguintes.
               </p>
+
+              <div class="blockquote undefined">
+                <ul>
+                  <li>id_rsa.pub</li>
+                  <li>id_ecdsa.pub</li>
+                  <li>id_ed25519.pub</li>
+                </ul>
+              </div>
+
               <p>
                 Se já existem chaves, pule para a seção
-                <strong>Copiar a sua chave SSH pública</strong>.
+                <strong>Copiar a sua chave SSH pública</strong>.<br />
+                Se não houver nenhum resultado ou se o diretório ainda não
+                existir, você não terá um par de chaves SSH existente no local
+                padrão. Você pode criar um novo par de chaves SSH na próxima
+                etapa.
+              </p>
+            </div>
+
+            <!-- 3 Paragraph -->
+            <div class="col-md-10 ml-auto mr-auto">
+              <h3 class="title">Gerando uma nova chaves SSH</h3>
+              <p>
+                Você pode gerar uma nova chave SSH no computador local. Depois
+                de gerar a chave, você pode adicionar a chave pública à sua
+                conta em Github.com para habilitar a autenticação para operações
+                do Git no SSH.<br />
+                1. Abra um Terminal.<br />
+                2. Execute o comando abaixo, substituindo o email usado no
+                exemplo pelo seu endereço de email do GitHub.
+              </p>
+
+              <!-- CODE BLOCK -->
+              <div class="info-code mb-4">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>
+                      <small>
+                        # O comando irá criar uma pasta .ssh na pasta Home do
+                        usuário
+                      </small>
+                      <br />
+                      <span class="text-white">$</span> mkdir $HOME/.ssh <br />
+                      <small>
+                        # Em seguinda, geramos um novo conjunto de chaves
+                      </small>
+                      <br />
+                      <span class="text-white">$</span> ssh-keygen -t ed25519 -C
+                      "your_email@example.com"
+                    </code>
+                  </h3>
+                </div>
+              </div>
+
+              <p>
+                <strong class="info-title">Observação:</strong> se estiver
+                usando um sistema herdado que não dá suporte ao algoritmo
+                Ed25519, use:
+              </p>
+
+              <!-- CODE BLOCK -->
+              <div class="info-code mb-4">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>
+                      <span class="text-white">$</span> ssh-keygen -t rsa -b
+                      4096 -C "your_email@example.com"
+                    </code>
+                  </h3>
+                </div>
+              </div>
+
+              <p>
+                Quando for solicitado a inserir um arquivo para salvar a chave,
+                pressione
+                <strong>Enter</strong> para aceitar o local padrão do arquivo.
+                Observe que, se você criou chaves SSH anteriormente, ssh-keygen
+                pode pedir que você reescreva outra chave. Nesse caso,
+                recomenda-se criar uma chave SSH personalizada. Para fazer isso,
+                digite o local do arquivo padrão e substitua id_ALGORITHM pelo
+                nome da chave personalizada.
+              </p>
+
+              <!-- CODE BLOCK -->
+              <div class="info-code mb-4">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>
+                      <small class="info-small">
+                        > Enter a file in which to save the key
+                        (/home/YOU/.ssh/id_ALGORITHM):[Press enter]
+                      </small>
+                    </code>
+                  </h3>
+                </div>
+              </div>
+
+              <p>
+                No prompt, digite uma frase secreta segura. Se não quiser a
+                chave com uma frase secreta, apenas pressione
+                <strong>Enter</strong>.
+              </p>
+
+              <!-- CODE BLOCK -->
+              <div class="info-code mb-4">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>
+                      <small class="info-small">
+                        > Enter passphrase (empty for no passphrase): [Type a
+                        passphrase]
+                      </small>
+                      <small class="info-small">
+                        > Enter same passphrase again: [Type a passphrase again]
+                      </small>
+                    </code>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 Paragraph -->
+            <div class="col-md-10 ml-auto mr-auto">
+              <h3 class="title">Adicionar sua chave SSH ao ssh-agent</h3>
+              <p>
+                Antes de adicionar uma nova chave SSH ao agente para gerenciar
+                suas chaves, você deve verificar as chaves SSH existentes e
+                gerado uma nova chave SSH.
               </p>
               <p>
-                Se não houver nenhum resultado ou se o diretório ainda não
-                existir, execute:
+                <span class="badge badge-pill badge-primary badge-circle"
+                  >1</span
+                >
+                Inicie o ssh-agent em segundo plano.
               </p>
-              <div class="blockquote undefined">
-                <small>
-                  # O comando irá criar uma pasta .ssh na pasta Home do usuário
-                </small>
-                <p>mkdir $HOME/.ssh</p>
-                <small>
-                  # Em seguinda, geramos um novo conjunto de chaves
-                </small>
-                <p>ssh-keygen -t ed25519 -C "seu-email-do-github"</p>
+
+              <!-- CODE BLOCK -->
+              <div class="info-code mb-4">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>
+                      <span class="text-white">$</span> eval "$(ssh-agent -s)"
+                      <small class="info-small"> > Agent pid 59566 </small>
+                    </code>
+                  </h3>
+                </div>
+              </div>
+
+              <p>
+                Dependendo do seu ambiente, talvez seja necessário usar um
+                comando diferente. Por exemplo, talvez seja necessário usar o
+                acesso raiz executando
+                <span class="code-span">sudo -s -H</span> antes de iniciar o
+                ssh-agent ou usar
+                <span class="code-span">exec ssh-agent bash</span> ou
+                <span class="code-span">exec ssh-agent zsh</span> para executar
+                o ssh-agent.
+              </p>
+
+              <p>
+                <span class="badge badge-pill badge-primary badge-circle"
+                  >2</span
+                >
+                Adicione sua chave SSH privada ao ssh-agent.
+              </p>
+              <p>
+                Se você criou sua chave com um nome diferente ou está
+                adicionando uma chave existente que tenha outro nome, substitua
+                <span class="font-italic">id_ed25519</span> no comando pelo nome
+                do arquivo de chave privada.
+              </p>
+
+              <!-- CODE BLOCK -->
+              <div class="info-code mb-4">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>
+                      <span class="text-white">$</span> ssh-add
+                      ~/.ssh/id_ed25519
+                    </code>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 Paragraph -->
+            <div class="col-md-10 ml-auto mr-auto">
+              <h3 class="title">
+                Como adicionar uma nova chave SSH à sua conta
+              </h3>
+              <p>
+                <span class="badge badge-pill badge-primary badge-circle"
+                  >1</span
+                >
+                Copie a chave pública SSH para a sua área de transferência.
+              </p>
+
+              <p>
+                Se o seu arquivo de chave pública SSH tiver um nome diferente do
+                código de exemplo, modifique o nome do arquivo para corresponder
+                à sua configuração atual. Ao copiar sua chave, não adicione
+                novas linhas nem espaços em branco.
+              </p>
+
+              <!-- CODE BLOCK -->
+              <div class="info-code mb-4">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>
+                      <span class="text-white">$</span> cat
+                      ~/.ssh/id_ed25519.pub
+                      <small class="info-small"
+                        ># Selecione e copie o conteúdo do arquivo
+                        id_25519.pub</small
+                      >
+                    </code>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GITHUB -->
+          <div class="row">
+            <div class="col-md-10 ml-auto mr-auto">
+              <!-- SETTINGS -->
+              <div class="card card-plain card-blog">
+                <div class="row">
+                  <!-- IMAGE -->
+                  <div class="col-md-5">
+                    <div class="card-header card-header-image">
+                      <img
+                        class="img"
+                        src="../assets/img/examples/userbar-account-settings-global-nav-update.webp"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- DESCRIPTION -->
+                  <div class="col-md-7">
+                    <h3 class="card-title">
+                      <span class="badge badge-pill badge-primary badge-circle"
+                        >1</span
+                      >
+                      Settings
+                    </h3>
+                    <p class="card-description">
+                      Copie a chave pública SSH para a sua área de
+                      transferência.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ACCESS -->
+              <div class="card card-plain card-blog">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h3 class="card-title">
+                      <span class="badge badge-pill badge-primary badge-circle"
+                        >2</span
+                      >
+                      Access
+                    </h3>
+                    <p class="card-description">
+                      Na seção "Acesso" da barra lateral, clique em:<br />
+                      <strong>SSH and GPG Keys</strong>
+                    </p>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="card-header card-header-image">
+                      <img
+                        class="img img-raised"
+                        src="../assets/img/examples/acess-ssh-gpg-keys.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- NEW SSH KEY -->
+              <div class="card card-plain card-blog">
+                <div class="row">
+                  <!-- IMAGE -->
+                  <div class="col-md-5">
+                    <div class="card-header card-header-image">
+                      <img
+                        class="img"
+                        src="../assets/img/examples/new-ssh-key.png"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- DESCRIPTION -->
+                  <div class="col-md-7">
+                    <h3 class="card-title">
+                      <span class="badge badge-pill badge-primary badge-circle"
+                        >3</span
+                      >
+                      New SSH Key
+                    </h3>
+                    <p class="card-description">
+                      Clique em <strong>New SSH Key</strong> ou
+                      <strong>Add SSH Key</strong>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ADD SSH KEY -->
+              <div class="card card-plain card-blog">
+                <div class="row">
+                  <!-- DESCRIPTION -->
+                  <div class="col-md-5">
+                    <h3 class="card-title">
+                      <span class="badge badge-pill badge-primary badge-circle"
+                        >4</span
+                      >
+                      Title
+                    </h3>
+                    <p class="card-description">
+                      No campo "Title" (Título), adicione uma etiqueta
+                      descritiva para a nova chave. Por exemplo, se estiver
+                      usando um pc pessoal, você poderá chamar essa chave de "PC
+                      Pessoal".
+                    </p>
+
+                    <h3 class="card-title">
+                      <span class="badge badge-pill badge-primary badge-circle"
+                        >5</span
+                      >
+                      Key Type
+                    </h3>
+                    <p class="card-description">
+                      Selecione o tipo de chave: autenticação ou assinatura.
+                      Para saber mais sobre a assinatura de commit, confira "<a
+                        href="https://docs.github.com/pt/authentication/managing-commit-signature-verification/about-commit-signature-verification"
+                        >Sobre a verificação de assinatura de commit</a
+                      >".
+                    </p>
+
+                    <h3 class="card-title">
+                      <span class="badge badge-pill badge-primary badge-circle"
+                        >6</span
+                      >
+                      Key
+                    </h3>
+                    <p class="card-description">
+                      No campo "Chave", cole sua chave pública.
+                    </p>
+                  </div>
+
+                  <!-- IMAGE -->
+                  <div class="col-md-7">
+                    <div class="card-header card-header-image">
+                      <img
+                        class="img img-raised"
+                        src="../assets/img/examples/add-ssh-key.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-10 ml-auto mr-auto">
+              <p>
+                <span class="badge badge-pill badge-primary badge-circle"
+                  >7</span
+                >
+                Clique em <strong>Add SSH Key</strong>.
+              </p>
+              <p>
+                <span class="badge badge-pill badge-primary badge-circle"
+                  >8</span
+                >
+                Se solicitado, confirme acesso à sua conta em GitHub. Para obter
+                mais informações, confira "<a
+                  href="https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/sudo-mode"
+                  >Modo sudo</a
+                >".
+              </p>
+
+              <p>Finalmente, teste a sua autenticação com:</p>
+
+              <!-- CODE BLOCK -->
+              <div class="info-code mb-4">
+                <div class="description">
+                  <h3 class="info-title">
+                    <code>
+                      <span class="text-white">$</span> ssh -T git@github.com
+                    </code>
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
